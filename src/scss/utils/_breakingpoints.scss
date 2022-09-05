@@ -1,0 +1,30 @@
+//500px for mobile phones
+//700px for tablets
+//1100px for desktops
+
+//sass map
+$breakpoints-up: (
+    "medium": 31.25em,
+    "large": 43.75em,
+    "xlarge": 68.75em
+);
+
+//699.98px, 899.98px, 1099px
+$breakpoints-down: (
+    "small": 31.2485em,
+    "medium": 43.7485em,
+    "large": 68.7485em
+);
+
+//sass mixin
+@mixin breakpoint($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}

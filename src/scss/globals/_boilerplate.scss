@@ -1,0 +1,18 @@
+@use '../utils';
+
+html{
+    box-sizing: border-box;
+    font-family: utils.$font;
+    letter-spacing: 1.5px;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;        
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
