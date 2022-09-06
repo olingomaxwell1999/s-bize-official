@@ -1,10 +1,23 @@
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import './app.scss'
 
+import Homepage from './pages/Homepage'
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
+import Meetthecohorts from './pages/Meetthecohorts'
+import Explorekenya from './pages/Explorekenya'
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Homepage/>}/>
+        <Route path='/cohorts' element={<Meetthecohorts/>}/>
+        <Route path='/explorekenya' element={<Explorekenya/>}/>
+      </Routes>
+      <Footer/>
+    </BrowserRouter>    
   );
 }
 
