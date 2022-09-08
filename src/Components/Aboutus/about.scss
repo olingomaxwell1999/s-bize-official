@@ -1,0 +1,23 @@
+.about{
+    display: flex;
+    align-items: center;
+    gap: 1.23rem;
+    height: 70vh;
+    padding: 1.23rem 6rem;
+
+    .image{
+        height: 100%;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

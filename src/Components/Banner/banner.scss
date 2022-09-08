@@ -1,0 +1,80 @@
+.banner{
+    clip-path: polygon(50% 100%, 100% 75%, 100% 0, 0 0, 0 75%);
+    height: 60vh;
+    // background-color: black
+    background: url('../../assets/banner1.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 6rem;
+    left: 0;
+    padding: 0.5rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        position: absolute;
+        left: 0;
+
+        z-index: -190;
+    }
+
+    .overlay{
+        height: 100%;
+        width: 100%;
+        background-color: var(--main-orange);
+        opacity: .5;
+        z-index: -1;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        width: 600px;
+        // top: 200px;
+        position: absolute;
+        // bottom: -60px;
+        top: 200px;
+
+        h1{
+            font-size: 50px;
+        }
+
+        .dev{
+            margin-bottom: 30px;
+        }
+
+        p{
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 50px;
+        }
+
+        .dots{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+    
+            span{
+                height: 6px;
+                width: 6px;
+                border-radius: 50%;
+                background-color: white;
+                margin-right: 10px;
+            }
+        }
+
+        .btn{
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: var(--main-blue);
+        }
+    }
+}

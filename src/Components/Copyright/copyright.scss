@@ -1,0 +1,17 @@
+.copy{
+    height: 3vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span{
+        font-size: 1rem;
+
+        a{
+            color: var(--main-orange);
+        }
+    }
+}

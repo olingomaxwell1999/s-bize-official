@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import Meetthecohorts from './pages/Meetthecohorts'
 import Explorekenya from './pages/Explorekenya'
+import Copyright from './Components/Copyright/Copyright';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/explorekenya' element={<Explorekenya/>}/>
       </Routes>
       <Footer/>
+      <Copyright/>
     </BrowserRouter>    
   );
 }

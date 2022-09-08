@@ -1,8 +1,14 @@
 import React from 'react'
+import About from '../Components/Aboutus/About'
+import Banner from '../Components/Banner/Banner'
 
 function Homepage() {
   return (
-    <div>Homepage</div>
+    <div className='home'>
+      <Banner/>
+
+      <About/>
+    </div>
   )
 }
 

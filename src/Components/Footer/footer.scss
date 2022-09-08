@@ -1,0 +1,13 @@
+.footer{
+    min-height: 500px;
+    clip-path: polygon(100% 57%, 100% 100%, 0 100%, 0 57%, 50% 73%);
+    width: 100%;
+    background-color: var(--main-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .icons{
+        height: 10vh;
+    }
+}
