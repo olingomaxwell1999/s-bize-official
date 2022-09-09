@@ -1,6 +1,6 @@
 .banner{
     clip-path: polygon(50% 100%, 100% 75%, 100% 0, 0 0, 0 75%);
-    height: 60vh;
+    height: 90vh;
     // background-color: black
     background: url('../../assets/banner1.JPG');
     background-size: cover;
@@ -13,20 +13,20 @@
     justify-content: center;
     align-items: center;
 
-    img{
-        position: absolute;
-        left: 0;
+    // img{
+    //     position: absolute;
+    //     left: 0;
 
-        z-index: -190;
-    }
+    //     z-index: -190;
+    // }
 
-    .overlay{
-        height: 100%;
-        width: 100%;
-        background-color: var(--main-orange);
-        opacity: .5;
-        z-index: -1;
-    }
+    // .overlay{
+    //     height: 100%;
+    //     width: 100%;
+    //     background-color: var(--main-orange);
+    //     opacity: .5;
+    //     z-index: -1;
+    // }
 
     .text{
         display: flex;
@@ -39,7 +39,7 @@
         // top: 200px;
         position: absolute;
         // bottom: -60px;
-        top: 200px;
+        top: 150px;
 
         h1{
             font-size: 50px;

@@ -16,6 +16,8 @@ function App() {
         <Route path='/' element={<Homepage/>}/>
         <Route path='/cohorts' element={<Meetthecohorts/>}/>
         <Route path='/explorekenya' element={<Explorekenya/>}/>
+        <Route path='/contactus' element={<Contactus/>}/>
+        <Route path='/nairobits' element={<Ex/>}/>
       </Routes>
       <Footer/>
       <Copyright/>

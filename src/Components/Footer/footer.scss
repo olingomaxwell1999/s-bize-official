@@ -1,13 +1,60 @@
 .footer{
-    min-height: 500px;
-    clip-path: polygon(100% 57%, 100% 100%, 0 100%, 0 57%, 50% 73%);
+    min-height: 40vh;
+    // clip-path: polygon(100% 57%, 100% 100%, 0 100%, 0 57%, 50% 73%);
     width: 100%;
     background-color: var(--main-blue);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: var(--padding);
 
     .icons{
         height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+        a{
+            margin-right: 20px;
+            color: white;
+
+            .icon{
+                font-size: 3.5rem;
+                padding: 10px;
+                border: 1px solid white;
+                border-radius: 50%;
+                color: white;
+            }
+
+            img{
+                height: 50px;
+                // margin-top: 15.23rem;
+                border-radius: var(--border-radius);
+            }
+        }
+    }
+
+    .cols{
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+        // margin: auto;
+
+        .col{
+            width: 100%;
+            
+
+            h3{
+                font-size: 1.4rem;
+                color: var(--main-orange);
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+
+            .footer__links{
+                display: block;
+            }
+        }
     }
 }
