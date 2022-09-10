@@ -1,0 +1,15 @@
+.banner{
+    height: 50vh;
+    width: 100%;
+    background-image: url(../../assets/banner2.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+
+    .overlay{
+        height: 100%;
+        width: 100%;
+        background-color: var(--main-orange);
+        opacity: 0.5;
+    }
+}

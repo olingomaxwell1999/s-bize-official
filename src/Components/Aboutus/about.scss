@@ -1,7 +1,7 @@
 .about{
-    display: flex;
-    align-items: center;
-    gap: 1.23rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     height: 70vh;
     padding: 1.23rem 6rem;
 
@@ -11,6 +11,37 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .rhombus{
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            height: 500px;
+            width: 500px;
+            background-color: var(--main-blue);
+            border-radius: var(--border-radius);
+            position: absolute;
+            z-index: -100;
+            left: -100px;
+        }
+
+        .circle{
+            height: 400px;
+            width: 400px;
+            background-color: var(--main-orange);
+            position: absolute;
+            z-index: -80;
+            left: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            top: -20px;
+        }
     }
 
     .text{
@@ -19,5 +50,27 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        h2{
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: var(--main-blue);
+            position: relative;
+
+            &::after{
+                content: '';
+                position: absolute;
+                left: 115px;
+                bottom: -3px;
+                width: 40%;
+                background-color: var(--main-orange);
+                height: 2px;
+            }
+        }
+
+        p{
+            font-size: 1.1rem;
+        }
     }
 }

@@ -1,0 +1,40 @@
+.cohorts{
+    min-height: 70vh;
+    width: 100%;
+    padding: var(--padding);
+
+    .text{
+        text-align: center;
+
+        h1{
+            position: relative;
+            font-size: 40px;
+            color: var(--main-blue);
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &::after{
+                content: '';
+                position: absolute;
+                left: 30;
+                bottom: -4px;
+                height: 3px;
+                width: 50%;
+                background-color: var(--main-orange);
+            }
+        }
+
+        p{
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+    }
+
+    .horts{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1.5rem; 
+    }
+}

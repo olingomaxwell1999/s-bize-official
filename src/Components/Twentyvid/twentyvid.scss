@@ -1,0 +1,27 @@
+.twentyvid{
+    height: 70vh;
+    width: 100%;
+    padding: var(--padding);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+
+    .video{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        video{
+            width: 100%;
+            border-radius: var(--border-radius);
+        }
+    }
+
+    .text{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -8,6 +8,12 @@
     justify-content: center;
     padding: var(--padding);
 
+    .up{
+        font-size: 1.5rem;
+        color: var(--main-orange);
+        text-align: center;
+    }
+
     .icons{
         height: 10vh;
         display: flex;
@@ -20,7 +26,7 @@
             color: white;
 
             .icon{
-                font-size: 3.5rem;
+                font-size: 2.5rem;
                 padding: 10px;
                 border: 1px solid white;
                 border-radius: 50%;
@@ -41,8 +47,29 @@
         gap: 1.5rem;
         // margin: auto;
 
+        
+
         .col{
             width: 100%;
+
+            a,p{
+                color: white;
+                font-size: 1.1rem;
+                line-height: 1.5;
+                font-weight: 500;
+            }
+
+            .input{
+                height: 50px;
+                width: 100%;
+                border-radius: var(--border-radius);
+                border: none;
+                background-color: #000;
+                padding: 10px 20px;
+                color: white;
+                font-size: 1.13rem;
+                margin-top: 1.23rem;
+            }
             
 
             h3{
@@ -50,10 +77,50 @@
                 color: var(--main-orange);
                 text-transform: uppercase;
                 font-weight: 600;
+                margin-bottom: 1.23rem;
             }
 
             .footer__links{
                 display: block;
+                color: white;
+            }
+
+            .white{
+                color: white;
+
+                &:hover{
+                    color: var(--main-orange);
+                }
+            }
+
+            .footer__link{
+                font-size: 1.1rem;
+                text-transform: uppercase;
+                line-height: 1.5;
+                color: white;
+                position: relative;
+                transition: var(--transition);
+                cursor: pointer;
+
+                &:hover{
+                    color: var(--main-orange);
+                    
+                    &::after{
+                        width: 50%;
+                    }
+                }
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: -2px;
+                    width: 0%;
+                    background-color: var(--main-orange);
+                    height: 2px;
+                    left: 0;
+
+                    
+                }
             }
         }
     }

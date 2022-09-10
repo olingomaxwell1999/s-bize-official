@@ -1,8 +1,11 @@
 import React from 'react'
+import Bannertwo from '../Components/Bannertwo/Bannertwo'
 
 function Meetthecohorts() {
   return (
-    <div>Meetthecohorts</div>
+    <div>
+      <Bannertwo/>
+    </div>
   )
 }
 

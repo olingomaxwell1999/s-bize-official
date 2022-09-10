@@ -1,0 +1,61 @@
+.info{
+    padding: var(--padding);
+    height: 40vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+    background-color: var(--main-blue);
+    color: white;
+    margin-bottom: 1.8rem;
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        width: 100%;
+
+        h3{
+            font-size: 25px;
+            text-transform: capitalize;
+            margin-bottom: 25px;
+            position: relative;
+
+            &::after{
+                content: '';
+                position: absolute;
+                height: 2px;
+                width: 60%;
+                left: 0;
+                bottom: -2px;
+                background-color: var(--main-orange);
+            }
+        }
+
+        p{
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+
+        button{
+            width: 50%;
+            background: var(--main-orange);
+        }
+    }
+
+    .video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        video{
+            height: 35vh;
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}

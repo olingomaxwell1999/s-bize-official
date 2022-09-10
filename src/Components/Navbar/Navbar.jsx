@@ -1,55 +1,93 @@
 import React,{useState} from 'react'
 import logo from '../../assets/logo-sbize.png'
 import {Link} from 'react-router-dom'
-import './navbar.scss'
-import Button from '@mui/material/Button'
+import './navbar.css'
+import Dropdown from './Dropdown'
+import Button from './Button'
 
 function Navbar() {
-  const [isNavExpanded, setIsNavExpanded] = useState(false)
+  const [click, setClick] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
 
   return (
-    <nav className="navigation">
-      <a href="/" className="brand-name">
-        <img src={logo} alt="S-Bize" />
-      </a>
-      <button onClick={() => {
-          setIsNavExpanded(!isNavExpanded);
-        }} className="hamburger">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          viewBox="0 0 20 20"
-          fill="white"
-        >
-          <path
-            fillRule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </button>
-      <div
-        className={
-          isNavExpanded ? "expanded" : "navigation-menu"
-        }>
-        <ul>
-          <li>
-            <Link className='link' to='/'>Home</Link>
+    <>
+      <nav className='navbar'>
+        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <img src={logo} alt="S-Bize Logo" />
+        </Link>
+        <div className='menu-icon' onClick={handleClick}>
+          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+        </div>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li className='nav-item'>
+            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              Home
+            </Link>
+          </li>
+          <li
+            className='nav-item'
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          >
+            <Link
+              to='/cohorts'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Meet The Cohorts <i className='fas fa-caret-down' />
+            </Link>
+            {dropdown && <Dropdown />}
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/products'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Explore Kenya
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/contact-us'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Contact Us
+            </Link>
           </li>
           <li>
-            <Link className='link' to='/cohorts'>Meet the Cohorts</Link>
-          </li>
-          <li>
-            <Link className='link' to='/cohorts'>Meet the Cohorts</Link>
-          </li>
-          <li>
-            <Link className='link' to='/cohorts'>
-              <Button variant="contained">Apply</Button>
+            <Link
+              to='/sign-up'
+              className='nav-links-mobile'
+              onClick={closeMobileMenu}
+            >
+              Apply
             </Link>
           </li>
         </ul>
-      </div>
-    </nav>
+        <Button />
+      </nav>
+    </>
   )
 }
 

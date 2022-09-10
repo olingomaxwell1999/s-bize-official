@@ -1,6 +1,6 @@
 .banner{
-    clip-path: polygon(50% 100%, 100% 75%, 100% 0, 0 0, 0 75%);
-    height: 90vh;
+    // clip-path: polygon(50% 100%, 100% 75%, 100% 0, 0 0, 0 75%);
+    height: 80vh;
     // background-color: black
     background: url('../../assets/banner1.JPG');
     background-size: cover;
@@ -39,7 +39,7 @@
         // top: 200px;
         position: absolute;
         // bottom: -60px;
-        top: 150px;
+        // top: 150px;
 
         h1{
             font-size: 50px;
