@@ -59,22 +59,13 @@ function Navbar() {
           </li>
           <li className='nav-item'>
             <Link
-              to='/products'
+              to='/explorekenya'
               className='nav-links'
               onClick={closeMobileMenu}
             >
               Explore Kenya
             </Link>
-          </li>
-          <li className='nav-item'>
-            <Link
-              to='/contact-us'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Contact Us
-            </Link>
-          </li>
+          </li> 
           <li>
             <Link
               to='/sign-up'

@@ -1,6 +1,6 @@
 .banner{
     // clip-path: polygon(50% 100%, 100% 75%, 100% 0, 0 0, 0 75%);
-    height: 80vh;
+    min-height: 80vh;
     // background-color: black
     background: url('../../assets/banner1.JPG');
     background-size: cover;
@@ -35,14 +35,23 @@
         justify-content: center;
         color: white;
         text-align: center;
-        width: 600px;
+        width: 1000px;
         // top: 200px;
         position: absolute;
         // bottom: -60px;
         // top: 150px;
+        padding: var(--padding);
+
+        @media screen and (max-width: 900px) {
+            width: 500px;
+        }
 
         h1{
             font-size: 50px;
+
+            @media screen and (max-width: 900px) {
+                font-size: 30px;
+            }
         }
 
         .dev{
@@ -53,7 +62,14 @@
             font-weight: 500;
             line-height: 1.2;
             margin-bottom: 50px;
+
+            @media screen and (max-width: 900px) {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
         }
+
+
 
         .dots{
             display: flex;
@@ -68,13 +84,6 @@
                 background-color: white;
                 margin-right: 10px;
             }
-        }
-
-        .btn{
-            justify-content: center;
-            align-items: center;
-            background-color: white;
-            color: var(--main-blue);
         }
     }
 }

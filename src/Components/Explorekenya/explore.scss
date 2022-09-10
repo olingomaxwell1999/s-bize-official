@@ -8,6 +8,10 @@
     gap: 2rem;
     overflow: hidden;
 
+    @media screen and (min-width: 1280px) {
+        padding: 1.23rem 10rem;
+    }
+
     .text{
         padding-top: 2rem;
         padding-bottom: 1rem;

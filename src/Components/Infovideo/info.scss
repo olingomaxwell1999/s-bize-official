@@ -10,6 +10,16 @@
     color: white;
     margin-bottom: 1.8rem;
 
+    @media screen and (min-width: 1280px) {
+        padding: 1.23rem 10rem;
+    }
+
+    @media screen and (max-width: 900px) {
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        padding: var(--padding);
+    }
+
     .text{
         display: flex;
         flex-direction: column;
@@ -27,7 +37,7 @@
                 content: '';
                 position: absolute;
                 height: 2px;
-                width: 60%;
+                width: 30%;
                 left: 0;
                 bottom: -2px;
                 background-color: var(--main-orange);
@@ -56,6 +66,7 @@
             height: 35vh;
             width: 100%;
             border-radius: 10px;
+            object-fit: cover;
         }
     }
 }

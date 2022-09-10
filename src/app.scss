@@ -50,7 +50,61 @@ li{
     padding: 0;
 }
 
-// .app{
-//     max-width: 1200px;
-//     margin: auto;
-// }
+.app{
+    overflow: hidden;
+}
+
+.cohortsall{
+    min-height: 100vh;
+    width: 100%;
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    @media screen and (min-width: 1280px) {
+        padding: 1.23rem 10rem;
+    }
+
+    .text{
+        display: block;
+        text-align: center;
+        width: 1000px;
+        margin-bottom: 30px;
+
+        h2{
+            font-size: 35px;
+            position: relative;
+            color: var(--main-blue);
+            margin-bottom: 20px;
+
+            &::after{
+                content: '';
+                position: absolute;
+                height: 3px;
+                width: 30%;
+                background-color: var(--main-orange);
+                left: 50%;
+                /* bring your own prefixes */
+                transform: translate(-50%, -50%);
+                bottom: -4px;
+            }
+        }
+
+        p{
+            font-size: 1.1rem;
+        }
+    }
+
+    .orts{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+
+        @media screen and (max-width: 900px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

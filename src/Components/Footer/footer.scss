@@ -8,6 +8,12 @@
     justify-content: center;
     padding: var(--padding);
 
+    @media screen and (min-width: 1280px) {
+        padding: 1.23rem 10rem;
+    }
+
+    
+
     .up{
         font-size: 1.5rem;
         color: var(--main-orange);
@@ -46,6 +52,10 @@
         justify-content: space-between;
         gap: 1.5rem;
         // margin: auto;
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+        }
 
         
 

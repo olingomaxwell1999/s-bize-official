@@ -1,7 +1,7 @@
 import React from 'react'
 import './banner.scss'
 import {Link} from 'react-router-dom'
-import Button from '@mui/material/Button';
+import Button from '../Navbar/Button';
 // import banner from '../../assets/banner1.JPG'
 
 function Banner() {
@@ -21,7 +21,7 @@ function Banner() {
                 <span></span>
             </div>
             
-            <Button className='btn' variant="contained">
+            <Button>
                 <Link to=''>Apply Now</Link>
             </Button>
         </div>

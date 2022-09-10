@@ -7,6 +7,10 @@
     background-size: cover;
     position: relative;
 
+    @media screen and (max-width: 900px) {
+        height: 50vh;
+    }
+
     .overlay{
         width: 100%;
         height: 100%;
@@ -18,10 +22,29 @@
     h1{
         font-size: 40px;
         position: absolute;
-        left: 40%;
-        top: 40%;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
         font-size: 60px;
         color: white;
         text-transform: capitalize;
+        padding: 10px 20px;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            bottom: -2px;
+            right: -2px;
+            border: 3px solid white;
+            transform: skew(2deg, 2deg);
+            z-index: -2;
+        }
+
+        @media screen and (max-width: 900px) {
+            font-size: 30px;
+        }
     }
 }

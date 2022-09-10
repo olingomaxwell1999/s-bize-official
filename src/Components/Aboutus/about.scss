@@ -4,6 +4,16 @@
     gap: 2rem;
     height: 70vh;
     padding: 1.23rem 6rem;
+    overflow: hidden;
+
+    @media screen and (min-width: 1280px) {
+        padding: 1.23rem 10rem;
+    }
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr;
+        min-height: 100vh;
+    }
 
     .image{
         height: 100%;
@@ -11,6 +21,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
 
         .rhombus{
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
@@ -21,6 +35,20 @@
             position: absolute;
             z-index: -100;
             left: -100px;
+
+            @media screen and (min-width: 1280px) {
+                left: 200px;
+            }
+
+            // @media screen and (max-width: 900px) {
+            //     left: 150px;
+            // }
+
+            @media screen and (max-width: 500px) {
+                height: 300px;
+                width: 300px;
+                left: 300px;
+            }
         }
 
         .circle{
@@ -32,6 +60,14 @@
             left: 100px;
             border-radius: 50%;
             overflow: hidden;
+
+            @media screen and (min-width: 1280px) {
+                left: 400px;
+            }
+
+            @media screen and (max-width: 900px) {
+                display: none;
+            }
         }
 
         img{
@@ -51,6 +87,11 @@
         flex-direction: column;
         justify-content: center;
 
+        @media screen and (max-width: 900px) {
+            padding-top: 0;
+            margin-top: 0;
+        }
+
         h2{
             font-size: 1.5rem;
             margin-bottom: 1.5rem;
@@ -61,11 +102,14 @@
             &::after{
                 content: '';
                 position: absolute;
-                left: 115px;
+                // top: 50%;
+                left: 50%;
+                /* bring your own prefixes */
+                transform: translate(-50%, -50%);
                 bottom: -3px;
-                width: 40%;
+                width: 20%;
                 background-color: var(--main-orange);
-                height: 2px;
+                height: 3px;
             }
         }
 

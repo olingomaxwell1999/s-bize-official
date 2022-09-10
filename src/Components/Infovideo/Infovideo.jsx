@@ -17,7 +17,7 @@ function Infovideo() {
             <Button variant="contained">Get Notified</Button>
         </div>
         <div className="video">
-            <video src={pvideo}></video>
+            <video controls src={pvideo}></video>
         </div>
     </div>
   )
