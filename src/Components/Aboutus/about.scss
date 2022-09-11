@@ -2,12 +2,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    height: 70vh;
-    padding: 1.23rem 6rem;
+    min-height: 90vh;
+    padding: var(--padding);
     overflow: hidden;
 
     @media screen and (min-width: 1280px) {
-        padding: 1.23rem 10rem;
+        padding: var(--padding-large);
     }
 
     @media screen and (max-width: 900px) {
@@ -35,6 +35,7 @@
             position: absolute;
             z-index: -100;
             left: -100px;
+            margin-top: 2rem;
 
             @media screen and (min-width: 1280px) {
                 left: 200px;

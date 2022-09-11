@@ -1,27 +1,80 @@
 .twentyvid{
-    height: 70vh;
+    min-height: 80vh;
     width: 100%;
     padding: var(--padding);
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
 
-    .video{
-        width: 100%;
+    @media screen and (min-width: 1280px) {
+        padding: var(--padding-large);
+    }
+
+    .title{
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 2rem;
+        color: var(--main-blue);
+        // margin-top: 30px;
 
-        video{
-            width: 100%;
-            border-radius: var(--border-radius);
+        h2{
+            font-size: 2.1rem;
+            text-transform: capitalize;
+            // color: var(--main-color);
+            position: relative;
+
+            &::after{
+                content: '';
+                position: absolute;
+                // top: 50%;
+                left: 50%;
+                /* bring your own prefixes */
+                transform: translate(-50%, -50%);
+                bottom: -5px;
+                width: 100%;
+                background-color: var(--main-orange);
+                height: 3px;
+            }
         }
     }
 
-    .text{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 2rem;
+
+        @media screen and (max-width: 900px) {
+            grid-template-columns: 1fr;
+        }
+
+        .video{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            video{
+                width: 100%;
+                object-fit: cover;
+                border-radius: var(--border-radius);
+            }
+        }
+
+        .text{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.1rem;
+
+            p{
+                font-size: 1.1rem;
+            }
+        }
     }
 }

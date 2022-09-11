@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     top: 6rem;
     left: 0;
-    padding: 0.5rem 6rem;
+    padding: var(--padding);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +38,9 @@
         width: 1000px;
         // top: 200px;
         position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         // bottom: -60px;
         // top: 150px;
         padding: var(--padding);
@@ -61,7 +64,7 @@
         p{
             font-weight: 500;
             line-height: 1.2;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
 
             @media screen and (max-width: 900px) {
                 font-size: 14px;
