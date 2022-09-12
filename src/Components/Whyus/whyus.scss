@@ -7,7 +7,7 @@
     align-items: center;
 
     @media screen and (min-width: 1280px) {
-        padding: 1.23rem 10rem;
+        padding: var(--padding-large);
     }
 
     @media screen and (max-width: 900px) {
@@ -29,9 +29,10 @@
                 content: '';
                 position: absolute;
                 left: 10px;
-                bottom: -4px;
-                height: 2px;
-                width: 90%;
+                bottom: -5px;
+                height: 3px;
+                transform: translate(40%, -50%);
+                width: 50%;
                 background-color: var(--main-orange);
             }
         }

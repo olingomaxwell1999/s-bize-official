@@ -9,7 +9,7 @@
     overflow: hidden;
 
     @media screen and (min-width: 1280px) {
-        padding: 1.23rem 10rem;
+        padding: var(--padding-large);
     }
 
     .text{
@@ -25,12 +25,13 @@
 
             &::after{
                 content: '';
-                height: 2px;
-                width: 30%;
+                height: 3px;
+                width: 5%;
                 background-color: var(--main-orange);
                 position: absolute;
                 left: 280px;
-                bottom: -4px;
+                bottom: -5px;
+                transform: translate(180%, -50%);
             }
         }
 

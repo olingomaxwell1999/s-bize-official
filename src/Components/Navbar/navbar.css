@@ -72,7 +72,7 @@
 
 @media screen and (min-width: 1280px) {
   .navbar{
-    padding: 1.23rem 10rem;
+    padding: var(--padding-large);
   }
 }
 

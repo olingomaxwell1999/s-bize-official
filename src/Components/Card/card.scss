@@ -49,10 +49,11 @@
                 content: '';
                 position: absolute;
                 height: 3px;
-                width: 100%;
+                width: 50%;
+                transform: translate(50%, -50%);
                 background-color: var(--main-orange);
                 left: 0;
-                bottom: -4px;
+                bottom: -6px;
             }
         }
 

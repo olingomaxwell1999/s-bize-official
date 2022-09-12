@@ -9,7 +9,7 @@
     padding: var(--padding);
 
     @media screen and (min-width: 1280px) {
-        padding: 1.23rem 10rem;
+        padding: var(--padding-large);
     }
 
     
