@@ -69,14 +69,14 @@ function Navbar() {
           <li>
             <Link
               to='/sign-up'
-              className='nav-links-mobile'
+              className='nav-links-mobile nav-btn'
               onClick={closeMobileMenu}
             >
               Apply
             </Link>
           </li>
         </ul>
-        <Button className='nav-btn' />
+        {/* <Button className='nav-btn' /> */}
       </nav>
     </>
   )

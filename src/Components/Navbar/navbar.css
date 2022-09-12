@@ -159,7 +159,7 @@
     transition: 250ms;
   }
 
-  button {
+  .nav-btn {
     display: block;
   }
 }
