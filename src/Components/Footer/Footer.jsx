@@ -1,6 +1,7 @@
 import React from 'react'
 import './footer.scss'
-import logo from '../../assets/logo-sbize.png'
+
+// import logo from '../../assets/logo-sbize.png'
 import { FaFacebookF } from "react-icons/fa";
 import { BsFillArrowUpCircleFill, BsInstagram } from "react-icons/bs";
 import {GrLinkedinOption} from 'react-icons/gr'
@@ -11,23 +12,7 @@ function Footer() {
   return (
     <div className='footer'>
       <BsFillArrowUpCircleFill className='up'/>
-      <div className="icons">
-        <a href="https://www.facebook.com">
-          <FaFacebookF className='icon' />
-        </a>
-        <a href="https://www.facebook.com">
-          <BsInstagram className='icon'/>
-        </a>
-        <a href="https://www.facebook.com">
-          <img src={logo} alt="S-Bize Logo" />
-        </a>
-        <a href="https://www.facebook.com">
-          <GrLinkedinOption className='icon'/>
-        </a>
-        <a href="https://www.facebook.com">
-          <AiFillYoutube className='icon'/>
-        </a>
-      </div>
+      
 
       <div className="cols">
         
@@ -55,7 +40,29 @@ function Footer() {
           <a href="mailto:info@nairobits.com">info@nairobits.com</a>
           <p>+254(020)6557635</p>
           <p>53 Park, Ring Road <br/> Kilimani</p>
+
+          <div className="icons">
+            <a href="https://www.facebook.com">
+              <FaFacebookF className='icon'/>
+            </a>
+            <a href="https://www.facebook.com">
+              <BsInstagram className='icon'/>
+            </a>
+            <a href="https://www.facebook.com">
+              <GrLinkedinOption className='icon'/>
+            </a>
+            <a href="https://www.facebook.com">
+              <AiFillYoutube className='icon'/>
+            </a>
+          </div>
         </div>
+        
+        <div className="col bs">
+          <button className="button one">iaccess</button>
+          <button className="button">apply</button>
+          <button className="button two">donate</button>
+        </div>
+
         <div className="col">
           <h3>newsletter</h3>
           <p>Subscribe to our newsletter & stay updated</p>

@@ -1,53 +1,46 @@
 .info{
     padding: var(--padding);
-    min-height: 40vh;
+    height: 50vh !important;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 1.5rem;
-    background-color: var(--main-blue);
-    color: white;
-    margin-bottom: 1.8rem;
-
-    @media screen and (min-width: 1280px) {
-        padding: var(--padding-large);
-    }
+    margin-bottom: 2rem;
 
     @media screen and (max-width: 900px) {
-        min-height: 100vh;
-        grid-template-columns: 1fr;
-        padding: var(--padding);
+        height: 80vh !important;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 10px 30px;
     }
 
     .text{
         display: flex;
         flex-direction: column;
         text-align: left;
-        justify-content: center;
+        // justify-content: center; 
         width: 100%;
 
-        h3{
-            font-size: 25px;
+        h1{
+            font-size: 40px;
             text-transform: capitalize;
             margin-bottom: 25px;
             position: relative;
+            color: var(--main-blue);
 
             &::after{
                 content: '';
                 position: absolute;
-                height: 3px;
-                width: 20%;
+                height: 5px;
+                border-radius: 10px;
+                width: 40%;
                 left: 0;
-                transform: translate(50%, -50%);
                 bottom: -5px;
                 background-color: var(--main-orange);
             }
         }
 
         p{
-            font-size: 1.1rem;
-            font-weight: 400;
+            font-size: 1.5rem;
+            font-weight: 500;
             margin-bottom: 1.5rem;
         }
 
@@ -56,18 +49,17 @@
             background: var(--main-orange);
         }
     }
-
+    
     .video{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        margin-bottom: 30px;
 
-        video{
-            height: 35vh;
-            width: 100%;
-            border-radius: 10px;
-            object-fit: cover;
+        iframe{
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius);
+            
         }
     }
 }

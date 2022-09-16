@@ -3,7 +3,7 @@ import logo from '../../assets/logo-sbize.png'
 import {Link} from 'react-router-dom'
 import './navbar.css'
 import Dropdown from './Dropdown'
-import Button from './Button'
+// import Button from './Button'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -30,21 +30,21 @@ function Navbar() {
 
   return (
     <>
-      <nav className='navbar'>
+      <nav className='con-nav'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
           <img src={logo} alt="S-Bize Logo" />
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li className='nav-item'>
+        <ul className={click ? 'nav-menu active' : 'con-menu'}>
+          <li className='con-item'>
             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
               Home
             </Link>
           </li>
           <li
-            className='nav-item'
+            className='con-item'
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
@@ -57,7 +57,7 @@ function Navbar() {
             </Link>
             {dropdown && <Dropdown />}
           </li>
-          <li className='nav-item'>
+          <li className='con-item'>
             <Link
               to='/explorekenya'
               className='nav-links'
@@ -77,6 +77,8 @@ function Navbar() {
           </li>
         </ul>
         {/* <Button className='nav-btn' /> */}
+
+        <button className="button is-warning">Apply Today</button>
       </nav>
     </>
   )

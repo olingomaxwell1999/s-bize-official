@@ -2,7 +2,7 @@ import React from 'react'
 import About from '../Components/Aboutus/About'
 import Banner from '../Components/Banner/Banner'
 import Infovideo from '../Components/Infovideo/Infovideo'
-import Whyus from '../Components/Whyus/Whyus'
+import Testimonials from '../Components/Testimonials/Testimonials'
 
 function Homepage() {
   return (
@@ -13,9 +13,7 @@ function Homepage() {
 
       <Infovideo/>
 
-      <Whyus/>
-
-      <Infovideo/>
+      <Testimonials/>
     </div>
   )
 }

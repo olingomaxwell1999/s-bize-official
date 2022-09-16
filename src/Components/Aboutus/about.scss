@@ -1,45 +1,17 @@
-.about{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    min-height: 90vh;
-    padding: var(--padding);
-    overflow: hidden;
-
-    @media screen and (min-width: 1280px) {
-        padding: var(--padding-large);
-    }
-
-    @media screen and (max-width: 900px) {
-        grid-template-columns: 1fr;
-        min-height: 100vh;
-    }
-
-    .image{
-        height: 100%;
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        @media screen and (max-width: 900px) {
-            display: none;
-        }
+.section{
+    height: 100vh;
+    top: 20px;
 
         .rhombus{
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-            height: 500px;
-            width: 500px;
-            background-color: var(--main-blue);
+            height: 800px;
+            width: 600px;
+            background-color: var(--accent-aqua);
             border-radius: var(--border-radius);
             position: absolute;
             z-index: -100;
-            left: -100px;
+            left: 20px;
             margin-top: 2rem;
-
-            @media screen and (min-width: 1280px) {
-                left: 200px;
-            }
 
             // @media screen and (max-width: 900px) {
             //     left: 150px;
@@ -52,70 +24,51 @@
             }
         }
 
-        .circle{
-            height: 400px;
-            width: 400px;
-            background-color: var(--main-orange);
-            position: absolute;
-            z-index: -80;
-            left: 100px;
-            border-radius: 50%;
-            overflow: hidden;
+    .circle{
+        height: 500px;
+        width: 500px;
+        background-color: var(--main-orange);
+        position: absolute;
+        // z-index: -80;
+        left: 150px;
+        top: 200px;
+        // right: 100px;
 
-            @media screen and (min-width: 1280px) {
-                left: 400px;
-            }
+        border-radius: 50%;
+        overflow: hidden;
 
-            @media screen and (max-width: 900px) {
-                display: none;
-            }
-        }
-
-        img{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            position: absolute;
-            left: 0;
-            top: -20px;
+        @media screen and (max-width: 900px) {
+            display: none;
         }
     }
 
-    .text{
+    img{
         height: 100%;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: -20px;
+    }
 
-        @media screen and (max-width: 900px) {
-            padding-top: 0;
-            margin-top: 0;
-        }
+    .lex{
+        width: 100%;
+        margin-top: 100px;
 
-        h2{
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-            color: var(--main-blue);
+        h1{
+            color: var(--main-blue) !important;
             position: relative;
 
             &::after{
-                content: '';
                 position: absolute;
-                // top: 50%;
-                left: 50%;
-                /* bring your own prefixes */
-                transform: translate(-50%, -50%);
-                bottom: -3px;
-                width: 20%;
+                content: '';
+                left: 0;
+                bottom: -8px;
+                width: 40%;
+                height: 5px;
+                border-radius: 10px;
                 background-color: var(--main-orange);
-                height: 3px;
             }
-        }
-
-        p{
-            font-size: 1.1rem;
         }
     }
 }

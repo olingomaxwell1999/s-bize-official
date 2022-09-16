@@ -1,26 +1,23 @@
-.banner{
+.hero{
     // clip-path: polygon(50% 100%, 100% 75%, 100% 0, 0 0, 0 75%);
-    min-height: 80vh;
+    height: 100vh;
     // background-color: black
     background: url('../../assets/banner1.JPG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    top: 6rem;
+    top: 80px;
     left: 0;
     padding: var(--padding);
     display: flex;
     justify-content: center;
     align-items: center;
-
-    // img{
-    //     position: absolute;
-    //     left: 0;
-
-    //     z-index: -190;
-    // }
+    position: relative;
 
     // .overlay{
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
     //     height: 100%;
     //     width: 100%;
     //     background-color: var(--main-orange);
@@ -28,14 +25,14 @@
     //     z-index: -1;
     // }
 
-    .text{
+    .hero-content{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         color: white;
         text-align: center;
-        width: 1000px;
+        width: 1200px;
         // top: 200px;
         position: absolute;
         top: 50%;
@@ -46,23 +43,23 @@
         padding: var(--padding);
 
         @media screen and (max-width: 900px) {
-            width: 500px;
+            width: 100vw;
         }
 
         h1{
-            font-size: 50px;
+            font-size: 80px !important;
+            color: #fff;
+            font-weight: 900;
+            line-height: 1.1;
 
             @media screen and (max-width: 900px) {
-                font-size: 30px;
+                font-size: 30px !important;
             }
-        }
-
-        .dev{
-            margin-bottom: 30px;
         }
 
         p{
             font-weight: 500;
+            font-size: 30px;
             line-height: 1.2;
             margin-bottom: 30px;
 

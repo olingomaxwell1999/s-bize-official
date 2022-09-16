@@ -1,25 +1,23 @@
 import React from 'react'
 
-import pvideo from '../../assets/nairobi.mp4'
-
-import Button from '@mui/material/Button'
-
 import './info.scss'
 
 function Infovideo() {
   return (
-    <div className='info'>
-        <div className="text">
-            <h3>Informational Video</h3>
+    <section className="section info">
+      <div className="container">
+        <div className="columns">
+          <div className="column text">
+            <h1 className="title">Informational Video</h1>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minus quo commodi rem magnam, suscipit reprehenderit asperiores quisquam cupiditate fugit in adipisci incidunt </p>
-
-            <Button variant="contained">Get Notified</Button>
+            <p>Learn about the tactics of the S-Bize program and the organizations that we engage.<br/><br/> Applications for 2022/23 S-Bize organizations are closed. Check back in July 2023 to join as a client organization</p>
+          </div>
+          <div className="column video">
+            <iframe title='video' frameborder="10" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="400" type="text/html" src="https://www.youtube.com/embed/DBXH9jJRaDk?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/es/">youtubeembedcode.com/es/</a></small></div><div><small><a href="https://oddssidorutansvensklicens.se/">https://oddssidorutansvensklicens.se/</a></small></div></iframe>
+          </div>
         </div>
-        <div className="video">
-            <video controls src={pvideo}></video>
-        </div>
-    </div>
+      </div>
+    </section>
   )
 }
 

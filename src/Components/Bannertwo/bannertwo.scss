@@ -1,5 +1,6 @@
 .bannertwo{
     height: 50vh;
+    left: 0;
     top: 60px;
     width: 100%;
     background-image: url(../../assets/banner3.JPG);
@@ -39,7 +40,6 @@
             bottom: -2px;
             right: -2px;
             border: 3px solid white;
-            transform: skew(2deg, 2deg);
             z-index: -2;
         }
 

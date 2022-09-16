@@ -1,0 +1,52 @@
+.testimony{
+    height: 50vh;
+    width: 100%;
+    margin: 30px 0;
+
+    @media screen and (max-width: 1000px) {
+        min-height: 50vh;
+        margin: 0;
+    }
+
+    @media screen and (max-width: 900px) {
+        height: 80vh !important;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 10px 30px;
+    }
+
+    h1{
+        font-size: 40px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        position: relative;
+        color: var(--main-blue);
+
+        &::after{
+            content: '';
+            position: absolute;
+            height: 5px;
+            border-radius: 10px;
+            width: 40%;
+            left: 0;
+            bottom: -5px;
+            background-color: var(--main-orange);
+        }
+    }
+
+    .img{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            height: 90%;
+            width: 80%;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+        }
+    }
+}

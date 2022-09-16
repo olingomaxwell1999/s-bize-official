@@ -1,6 +1,6 @@
-.navbar {
+.con-nav {
   background: white;
-  height: 60px;
+  height: 80px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@
 }
 
 .navbar-logo img{
-  height: 40px;
+  height: 60px;
 }
 
 .fa-firstdraft {
@@ -29,7 +29,7 @@
   font-size: 1.6rem;
 }
 
-.nav-menu {
+.con-menu {
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
@@ -40,7 +40,7 @@
   margin-right: 2rem;
 }
 
-.nav-item {
+.con-item {
   display: flex;
   align-items: center;
   height: 60px;
@@ -48,8 +48,19 @@
 
 .nav-links {
   color: var(--main-blue);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
   text-decoration: none;
   padding: 0.5rem 1rem;
+}
+
+.button{
+  background-color: var(--main-orange) !important;
+  color: #fff !important;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .nav-links:hover {
@@ -157,9 +168,5 @@
     background: #fff;
     color: var(--main-orange);
     transition: 250ms;
-  }
-
-  .nav-btn {
-    display: block;
   }
 }
