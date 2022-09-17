@@ -3,6 +3,7 @@ import logo from '../../assets/logo-sbize.png'
 import {Link} from 'react-router-dom'
 import './navbar.css'
 import Dropdown from './Dropdown'
+import Button from './Button'
 // import Button from './Button'
 
 function Navbar() {
@@ -30,21 +31,21 @@ function Navbar() {
 
   return (
     <>
-      <nav className='con-nav'>
+      <nav className='nav'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
           <img src={logo} alt="S-Bize Logo" />
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
-        <ul className={click ? 'nav-menu active' : 'con-menu'}>
-          <li className='con-item'>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li className='nav-item'>
             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
               Home
             </Link>
           </li>
           <li
-            className='con-item'
+            className='nav-item'
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
@@ -57,7 +58,7 @@ function Navbar() {
             </Link>
             {dropdown && <Dropdown />}
           </li>
-          <li className='con-item'>
+          <li className='nav-item'>
             <Link
               to='/explorekenya'
               className='nav-links'
@@ -69,16 +70,16 @@ function Navbar() {
           <li>
             <Link
               to='/sign-up'
-              className='nav-links-mobile nav-btn'
+              className='nav-links-mobile btn'
               onClick={closeMobileMenu}
             >
-              Apply
+              Apply Today
             </Link>
           </li>
         </ul>
         {/* <Button className='nav-btn' /> */}
 
-        <button className="button is-warning">Apply Today</button>
+        <Button/>
       </nav>
     </>
   )

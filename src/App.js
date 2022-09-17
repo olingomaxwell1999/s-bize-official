@@ -1,6 +1,5 @@
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
 import './app.scss'
-import "bulma/css/bulma.min.css";
 
 
 import Homepage from './pages/Homepage'

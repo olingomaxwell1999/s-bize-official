@@ -1,29 +1,25 @@
-.hero{
-    // clip-path: polygon(50% 100%, 100% 75%, 100% 0, 0 0, 0 75%);
-    height: 100vh;
-    // background-color: black
+.bannerone{
     background: url('../../assets/banner1.JPG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     top: 80px;
     left: 0;
-    padding: var(--padding);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 
-    // .overlay{
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     height: 100%;
-    //     width: 100%;
-    //     background-color: var(--main-orange);
-    //     opacity: .5;
-    //     z-index: -1;
-    // }
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        opacity: .5;
+        // z-index: -1;
+    }
 
     .hero-content{
         display: flex;
@@ -32,7 +28,7 @@
         justify-content: center;
         color: white;
         text-align: center;
-        width: 1200px;
+        width: 1000px;
         // top: 200px;
         position: absolute;
         top: 50%;
@@ -59,31 +55,8 @@
 
         p{
             font-weight: 500;
-            font-size: 30px;
             line-height: 1.2;
             margin-bottom: 30px;
-
-            @media screen and (max-width: 900px) {
-                font-size: 14px;
-                margin-bottom: 20px;
-            }
-        }
-
-
-
-        .dots{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
-    
-            span{
-                height: 6px;
-                width: 6px;
-                border-radius: 50%;
-                background-color: white;
-                margin-right: 10px;
-            }
         }
     }
 }

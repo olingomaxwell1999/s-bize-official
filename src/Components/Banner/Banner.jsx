@@ -1,10 +1,10 @@
 import React from 'react'
 import './banner.scss'
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 function Banner() {
   return (
-    <div className='hero'>
+    <div className='section bannerone' id='banner'>
       <div className="overlay is-overlay"></div>
       <div className="container">
         
@@ -13,7 +13,9 @@ function Banner() {
 
           <p>Leveraging academic genius to promote local organizations with a strong impact in Kenyan communities</p>
 
-          <button className="button">meet the 2022 Cohort</button>
+          <button className="btn">
+            <Link to='/cohorts'>Meet the cohorts</Link>
+          </button>
         </div>
       </div> 
     </div>

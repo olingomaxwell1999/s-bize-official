@@ -1,20 +1,25 @@
-.btn {
-    padding: 8px 20px;
-    border-radius: 4px;
-    outline: none;
-    border: none;
-    font-size: 18px;
-    color: #fff;
-    cursor: pointer;
-    background-color: var(--main-blue);
+.cta-btn {
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background-color: var(--main-orange);
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 960px) {
+  .cta-btn{
+    display:none;
   }
+}
   
-  .btn:hover {
-    padding: 6px 18px;
-    transition: all 0.3s ease-out;
-    background-color: transparent;
-    color: var(--main-blue);
-    border-radius: 4px;
-    border: 2px solid var(--main-blue);
-    transition: all 0.3s ease-out;
-  }
+.cta-btn:hover {
+  padding: 6px 18px;
+  background-color: transparent;
+  color: var(--main-blue);
+  border-radius: var(--border-radius);
+  border: 2px solid var(--main-orange);
+}

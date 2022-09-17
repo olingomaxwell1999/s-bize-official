@@ -11,7 +11,9 @@ import {Link} from 'react-router-dom'
 function Footer() {
   return (
     <div className='footer'>
-      <BsFillArrowUpCircleFill className='up'/>
+      <a href="#banner">
+        <BsFillArrowUpCircleFill className='up'/>
+      </a>
       
 
       <div className="cols">
@@ -58,9 +60,9 @@ function Footer() {
         </div>
         
         <div className="col bs">
-          <button className="button one">iaccess</button>
-          <button className="button">apply</button>
-          <button className="button two">donate</button>
+          <button className="btn-green">iaccess</button>
+          <button className="btn">apply</button>
+          <button className="btn">donate</button>
         </div>
 
         <div className="col">

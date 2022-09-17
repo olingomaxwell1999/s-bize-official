@@ -1,11 +1,10 @@
 .section{
-    height: 100vh;
-    top: 20px;
+
 
         .rhombus{
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-            height: 800px;
-            width: 600px;
+            height: 100vh;
+            width: 400px;
             background-color: var(--accent-aqua);
             border-radius: var(--border-radius);
             position: absolute;
@@ -17,16 +16,16 @@
             //     left: 150px;
             // }
 
-            @media screen and (max-width: 500px) {
-                height: 300px;
-                width: 300px;
-                left: 300px;
+            @media screen and (max-width: 960px) {
+                height: 100%;
+                width: 100%;
+                left: 0;
             }
         }
 
     .circle{
-        height: 500px;
-        width: 500px;
+        height: 300px;
+        width: 300px;
         background-color: var(--main-orange);
         position: absolute;
         // z-index: -80;
@@ -48,7 +47,7 @@
         object-fit: cover;
         position: absolute;
         left: 0;
-        top: -20px;
+        top: -10px;
     }
 
     .lex{
@@ -58,6 +57,7 @@
         h1{
             color: var(--main-blue) !important;
             position: relative;
+            margin-bottom: 30px;
 
             &::after{
                 position: absolute;
