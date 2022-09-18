@@ -1,20 +1,19 @@
 import React from 'react'
 import './card.scss'
-import img from '../../assets/banner1.JPG'
-import Button from '../Navbar/Button'
+import { Link } from 'react-router-dom'
 
-function Card() {
+function Card(props) {
   return (
-    <div className="card">
-        <div className="img">
-            <img src={img} alt="img" />
-        </div>
-        <div className="text">
-            <h3>Wealth of Knowledge</h3>
+    <div className="wrapper">
+        <div className="wrapper__body">
+          <img src={props.img} alt="wrapper img" />
+          <h2>{props.title}</h2>
 
-            <p>The consultants bring knowledge after recieving training from a global leader in business education; The london School of Economics.The london School of Economics.</p>
+          <p>{props.desc}</p>
 
-            <Button>Read More</Button>
+          <button className="btn">
+            <Link to={props.link}>Read More</Link>
+          </button>
         </div>
     </div>
   )

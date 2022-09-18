@@ -57,6 +57,8 @@ p{
     border: none;
     outline: none;
     transition: var(--transition);
+    border-radius: var(--border-radius);
+    text-transform: capitalize;
 
     Link{
         color: white !important;
@@ -76,6 +78,8 @@ p{
     border: none;
     outline: none;
     transition: var(--transition);
+    border-radius: var(--border-radius);
+    text-transform: capitalize;
 
     Link{
         color: white !important;
@@ -151,47 +155,60 @@ li{
     }
 }
 
-.cohortsall{
+.cohorts{
     min-height: 100vh;
-    width: 100%;
+    width: 80vw;
+    margin: 2rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    padding: var(--padding);
 
-    @media screen and (min-width: 1280px) {
-        padding: 1.23rem 10rem;
+    @media screen and (max: 960px) {
+        min-height: 100vh !important;
+        width: 100vw !important;
+        // grid-template-columns: 1fr;
+        // margin-top: 0 !important;
+        // padding-top: 0;
+        margin-bottom: 3rem !important;
+        padding: 10px 30px;
     }
 
     .text{
         display: block;
-        text-align: center;
         width: 1000px;
-        margin-bottom: 30px;
+        text-align: left;
 
         @media screen and (max-width: 900px) {
-            width: 100vw;
-            padding: var(--padding);
-            margin: 20px 0;
+            width: 100% !important;
+            // padding: var(--padding);
+            margin: 20px auto;
         }
 
-        h2{
-            font-size: 35px;
+        h1{
             position: relative;
             color: var(--main-blue);
-            margin-bottom: 20px;
+            margin-bottom: 20px !important;
+            text-align: left !important;
 
             &::after{
                 content: '';
                 position: absolute;
-                height: 3px;
-                width: 20%;
+                height: 5px !important;
+                width: 30% !important;
                 background-color: var(--main-orange);
-                left: 50%;
+                left: 43% !important;
                 /* bring your own prefixes */
                 transform: translate(-50%, -50%);
                 bottom: -5px;
+                border-radius: var(--border-radius);
+
+                @media screen and (max-width: 900px){
+                    width: 50% !important;
+                    left: 28% !important;
+                }
             }
         }
 
@@ -204,9 +221,16 @@ li{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
+        width: 1000px;
 
         @media screen and (max-width: 900px) {
             grid-template-columns: 1fr;
+            width: 100%;
         }
     }
+}
+
+.nairobits{
+    min-height: 100vh !important;
+    margin: auto;
 }

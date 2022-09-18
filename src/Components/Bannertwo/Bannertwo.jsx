@@ -1,11 +1,13 @@
 import React from 'react'
 import './bannertwo.scss'
 
-function Bannertwo() {
+function Bannertwo(props) {
   return (
-    <div className='bannertwo'>
+    <div style={{
+          backgroundImage: `url(${props.bg})`
+        }} className='bannertwo'>
         <div className="overlay"></div>
-        <h1>Meet the cohorts</h1>
+        <h1>{props.title}</h1>
     </div>
   )
 }

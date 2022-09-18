@@ -1,60 +1,65 @@
 .testimony{
-    min-height: 50vh;
-    width: 100%;
-    margin: 30px 0;
+    height: 60vh;
+    width: 1000px;
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1.5rem 0 1.5rem 0;
 
-    @media screen and (max-width: 1000px) {
-        min-height: 50vh !important;
-        margin: 0;
-    }
-
-    @media screen and (max-width: 960px) {
-        min-height: 80vh !important;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
+    @media screen and (max-width: 960px){
+        min-height: 100vh !important;
+        width: 100vw !important;
+        grid-template-columns: 1fr;
+        margin-top: 0 !important;
+        padding-top: 0;
+        margin-bottom: 3rem !important;
         padding: 10px 30px;
     }
 
-    h1{
-        text-transform: capitalize;
-        margin-bottom: 25px;
-        position: relative;
-        color: var(--main-blue);
+    .img{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        &::after{
-            content: '';
-            position: absolute;
-            height: 5px;
-            border-radius: 10px;
-            width: 40%;
-            left: 0;
-            bottom: -5px;
-            background-color: var(--main-orange);
+        img{
+            height: 80%;
+            width: 80%;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
         }
     }
 
-    p{
-        margin-bottom: 30px;
-    }
+    .text{
+        height: 100%;
+        width: 100%;
 
-    button{
-        border-radius: var(--border-radius);
-    }
+        h1{
+            text-transform: capitalize;
+            margin-bottom: 25px;
+            position: relative;
+            color: var(--main-blue);
 
-    .img{
-        height: 400px;
-        width: 500px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: var(--border-radius);
+            &::after{
+                content: '';
+                position: absolute;
+                height: 5px;
+                border-radius: 10px;
+                width: 40%;
+                left: 0;
+                bottom: -5px;
+                background-color: var(--main-orange);
+            }
+        }
 
-        img{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            width: 300px;
+        p{
+            margin-bottom: 30px;
+        }
+
+        button{
             border-radius: var(--border-radius);
         }
     }

@@ -8,7 +8,6 @@ import Footer from './Components/Footer/Footer';
 import Meetthecohorts from './pages/Meetthecohorts'
 import Explorekenya from './pages/Explorekenya'
 import Copyright from './Components/Copyright/Copyright';
-import Contactus from './pages/Contactus'
 import Nairobits from './pages/Nairobits'
 import Rubencenter from './pages/Rubencenter'
 import Relinkedgroup from './pages/Relinkedgroup'
@@ -26,7 +25,6 @@ function App() {
         <Route path='/' element={<Homepage/>}/>
         <Route path='/cohorts' element={<Meetthecohorts/>}/>
         <Route path='/explorekenya' element={<Explorekenya/>}/>
-        <Route path='/contactus' element={<Contactus/>}/>
         <Route path='/nairobits' element={<Nairobits/>}/>
         <Route path='/rubencenter' element={<Rubencenter/>}/>
         <Route path='/relinkedgroup' element={<Relinkedgroup/>}/>

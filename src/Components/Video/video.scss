@@ -1,0 +1,22 @@
+.video-responsive {
+overflow: hidden;
+    position: relative;
+    height: 60vh;
+    width: 100%;
+
+    iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+
+        @media screen and (max-width:960px) {
+            width: 100%;
+            height: 60vh;
+            margin: auto;
+        }
+    }
+}

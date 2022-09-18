@@ -4,23 +4,19 @@ import './testimonial.scss'
 
 function Testimonials() {
   return (
-    <div className="section testimony">
-        <div className="container">
-            <div className="columns">
-                <div className="column">
-                    <div className="img">
-                        <img src={photo} alt="" />
-                    </div>
-                </div>
-                <div className="column">
-                    <h1 className="title">Testimonials</h1>
-
-                    <p>Wanawake kwa Wanawake works with children, youth, and women from the Kibera community. We worked with the MBA students from LSE in one of our empowerment projects and they were a great help in shaping uts business model through participatory actions. Thank you NairoBits.</p>
-
-                    <button className='btn'>Wanawake Kwa Wanawake</button>
-                </div>
-            </div>
+    <div className="testimony">
+        <div className="img">
+            <img src={photo} alt="testimony one" />
         </div>
+
+        <div className="text">
+            <h1 className="title">Testimonials</h1>
+
+            <p>Wanawake kwa Wanawake works with children, youth, and women from the Kibera community. We worked with the MBA students from LSE in one of our empowerment projects and they were a great help in shaping uts business model through participatory actions. Thank you NairoBits.</p>
+
+            <button className='btn'>Wanawake Kwa Wanawake</button>
+        </div>
+
     </div>
   )
 }

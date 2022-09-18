@@ -1,24 +1,22 @@
 import React from 'react'
 import './twentyvid.scss'
-import video from '../../assets/nairobi.mp4';
+import Video from '../Video/Video'
 
-function Twentyvid() {
+function Twentyvid(props) {
   return (
     <div className='twentyvid'>
         <div className="title">
-          <h2>informative video</h2>
+          <h1>{props.title}</h1>
         </div>
 
         <div className="main">
 
           <div className="video">
-            <video src={video} controls></video>
+            <Video embedId='q3wX4e1hnTc' />
           </div>
 
           <div className="text">
-            <p>
-            The S-bize program is an innovative program that connects academic excellence on social entrepreneurship to social entrepreneurs in Kenya. The program offers MBA students with business knowledge to field experience through a consulting mission in the slums of Kenya.
-            </p>
+            <p>{props.text}</p>
           </div>
         </div>
     </div>

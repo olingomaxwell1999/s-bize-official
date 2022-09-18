@@ -1,20 +1,17 @@
-.cohorts{
+.main-wrapper{
     min-height: 70vh;
     width: 100%;
+    margin: auto;
     padding: var(--padding);
-
-    @media screen and (min-width: 1280px) {
-        padding: var(--padding-large);
-    }
 
     .text{
         text-align: center;
 
         h1{
             position: relative;
-            font-size: 40px;
+            font-size: 40px !important;
             color: var(--main-blue);
-            margin-bottom: 50px;
+            margin-bottom: 30px !important;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -25,9 +22,10 @@
                 left: 50%;
                 /* bring your own prefixes */
                 transform: translate(-50%, -50%);
-                bottom: -5px;
-                height: 3px;
-                width: 10%;
+                bottom: -8px;
+                height: 5px;
+                width: 20%;
+                border-radius: var(--border-radius);
                 background-color: var(--main-orange);
             }
         }
@@ -38,9 +36,9 @@
         }
     }
 
-    .horts{
+    .cohort{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(4,1fr);
         gap: 1.5rem; 
 
         @media screen and (max-width: 900px) {
