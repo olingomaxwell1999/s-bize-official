@@ -39,13 +39,15 @@
         padding: var(--padding);
 
         @media screen and (max-width: 900px) {
-            width: 100vw;
+            width: 100% !important;
+            padding: 0 30px;
+            margin: 0;
         }
 
         h1{
             font-size: 80px !important;
             color: #fff;
-            font-weight: 900;
+            font-weight: 700;
             line-height: 1.1;
 
             @media screen and (max-width: 900px) {

@@ -3,7 +3,7 @@
 
     .wrapper__body{
         overflow: hidden;
-        width: 100%;
+        width: 100% !important;
         box-shadow: var(--box-shadow);
         border-radius: 4px;
         display: flex;
@@ -11,6 +11,12 @@
         justify-content: space-between;
         cursor: pointer;
         transition: var(--transition);
+
+        @media screen and (max-width: 900px){
+            // width: 80vw !important;
+            margin: auto;
+            padding: 0;
+        }
 
         img{
             height: 19rem;

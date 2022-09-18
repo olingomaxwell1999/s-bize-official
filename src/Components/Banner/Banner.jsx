@@ -14,7 +14,7 @@ function Banner() {
           <p>Leveraging academic genius to promote local organizations with a strong impact in Kenyan communities</p>
 
           <button className="btn">
-            <Link to='/cohorts'>Meet the cohorts</Link>
+            <Link style={{color: 'white'}} to='/cohorts'>Meet the cohorts</Link>
           </button>
         </div>
       </div> 

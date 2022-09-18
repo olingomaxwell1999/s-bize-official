@@ -17,7 +17,7 @@ function Infovideo() {
         </p>
 
         <button className="btn">
-          <Link to='/cohorts'>Meet the Cohorts</Link>
+          <Link style={{color: '#0F4E7D'}} target='_blank ' to='https://mailchi.mp/nairobits/the-nairobits-way-still-rising?e=[UNIQID]'>get notified</Link>
         </button>
       </div>
       <div className="video">

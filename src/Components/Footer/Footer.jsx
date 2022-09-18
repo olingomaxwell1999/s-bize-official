@@ -44,25 +44,31 @@ function Footer() {
           <p>53 Park, Ring Road <br/> Kilimani</p>
 
           <div className="icons">
-            <a href="https://www.facebook.com">
+            <a href="https://www.facebook.com/NairobitsTrust/" target="_blank" rel="noreferrer">
               <FaFacebookF className='icon'/>
             </a>
-            <a href="https://www.facebook.com">
+            <a href="https://www.instagram.com/nairobitstrust/" target="_blank" rel="noreferrer">
               <BsInstagram className='icon'/>
             </a>
-            <a href="https://www.facebook.com">
+            <a href="https://www.linkedin.com/in/nairobits-trust-5b1218204/" target="_blank" rel="noreferrer">
               <GrLinkedinOption className='icon'/>
             </a>
-            <a href="https://www.facebook.com">
+            <a href="https://www.youtube.com/channel/UCHS3iDHMmIvhI8XrKlyykDg" target="_blank" rel="noreferrer">
               <AiFillYoutube className='icon'/>
             </a>
           </div>
         </div>
         
         <div className="col bs">
-          <button className="btn-green">iaccess</button>
-          <button className="btn">apply</button>
-          <button className="btn">donate</button>
+          <button className="btn-green">
+            <a href="https://www.iaccess.co.ke/" target="_blank" rel="noreferrer">iaccess</a>
+          </button>
+          <button className="btn">
+            <a href="https://www.nairobits.com/donate" target="_blank" rel="noreferrer">donate</a>
+          </button>
+          <button className="btn-transparent">
+            <a href="https://www.nairobits.com/apply" target="_blank" rel="noreferrer">apply</a>
+          </button>
         </div>
 
         <div className="col">

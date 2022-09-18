@@ -12,11 +12,13 @@ overflow: hidden;
         position: absolute;
         border-radius: var(--border-radius);
         box-shadow: var(--box-shadow);
+        object-fit: contain;
 
         @media screen and (max-width:960px) {
             width: 100%;
-            height: 60vh;
+            height: 50vh !important;
             margin: auto;
+            object-fit: contain !important;
         }
     }
 }

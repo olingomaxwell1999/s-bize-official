@@ -22,8 +22,12 @@
         color: var(--main-blue);
         // margin-top: 30px;
 
+        @media screen and (max-width: 900px){
+            margin-top: 30px;
+        }
+
         h1{
-            font-size: 3.1rem;
+            font-size: 2.5rem;
             text-transform: capitalize;
             // color: var(--main-color);
             position: relative;
@@ -44,6 +48,7 @@
 
             @media screen and (max-width: 900px){
                     text-align: center;
+                    margin-bottom: 0;
             }
         }
     }

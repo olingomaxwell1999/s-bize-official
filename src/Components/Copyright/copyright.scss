@@ -10,6 +10,11 @@
     span{
         font-size: 1.1rem;
 
+        @media screen and (min-width:300px) and (max-width: 600px){
+            font-size: .8rem !important;
+            text-align: center;
+        }
+
         a{
             color: var(--main-orange);
         }

@@ -12,9 +12,9 @@ function Meetthecohorts() {
       <Bannertwo bg={back} title="Meet The Cohorts"/>
 
       <div className="cohorts">
-        <div className="text">
+        <div className="">
           <h1>Meet our Cohorts</h1>
-          <p>Since 2018, Nairobits has been hosting students from the london School of economics in Kenya to undertake their research as part of their masters program. This research involves structuring social business models for organizations. Here are some of the cohorts we have successfully had so far.</p>
+          <p >Since 2018, Nairobits has been hosting students from the london School of economics in Kenya to undertake their research as part of their masters program. This research involves structuring social business models for organizations. Here are some of the cohorts we have successfully had so far.</p>
         </div>
 
         <div className="meet">

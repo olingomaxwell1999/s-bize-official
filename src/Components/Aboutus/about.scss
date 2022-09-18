@@ -8,12 +8,12 @@
     padding: 1.5rem 0 1.5rem 0;
 
     @media screen and (max-width: 960px){
-        min-height: 80vh !important;
+        height: 65vh !important;
         width: 100vw !important;
         grid-template-columns: 1fr;
         margin-top: 0 !important;
         padding-top: 0;
-        margin-bottom: 3rem !important;
+        margin-bottom: 1rem !important;
         padding: 10px 30px;
     }
 
@@ -76,6 +76,10 @@
             left: 0;
             top: -10px;
         }
+
+        @media screen and (max-width:960px) {
+            display: none;
+        }
     }
 
     .text{
@@ -83,13 +87,17 @@
         margin-top: 100px;
 
         @media screen and (max-width: 960px){
-            max-height: 60vh;
+            // max-height: 60vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            top: 0;
             // align-items: center;
             // text-align: center;
-            margin-top: 20rem !important;
+            margin-top: 0rem !important;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            padding-top: 3rem;
             // margin-bottom: 3rem;
         }
 

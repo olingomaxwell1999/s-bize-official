@@ -15,8 +15,8 @@
         grid-template-columns: 1fr;
         margin-top: 0 !important;
         padding-top: 0;
-        padding: 10px 30px;
-        margin-bottom: 10rem !important;
+        padding: 20px 30px;
+        margin-bottom: 2rem !important;
     }
 
     .text{
@@ -29,6 +29,7 @@
 
         @media screen and (max-width: 900px){
             width: 100%;
+            margin-top: 3rem;
         }
 
         h1{
@@ -44,7 +45,7 @@
                 border-radius: 10px;
                 width: 40%;
                 left: 0;
-                bottom: -5px;
+                bottom: -8px;
                 background-color: var(--main-orange);
             }
         }
@@ -66,6 +67,10 @@
         align-items: center;
         margin-bottom: 30px;
         margin-top: 3.5rem;
+
+        @media screen and (max-width: 900px){
+            margin-top: 1rem;
+        }
 
         iframe{
             box-shadow: var(--box-shadow);

@@ -5,7 +5,7 @@ function Bannertwo(props) {
   return (
     <div style={{
           backgroundImage: `url(${props.bg})`
-        }} className='bannertwo'>
+        }} id="banner" className='bannertwo'>
         <div className="overlay"></div>
         <h1>{props.title}</h1>
     </div>

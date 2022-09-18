@@ -17,7 +17,7 @@ function Wanawake() {
 
       <Displaysix title='Sustainability' desc="Women For Women In Africa believes the best way to relieve poverty is through education. As such, the organization works in East Africa’s largest slum and one of the largest in the world, by providing education and resources to enable children to live a life of dignity, happiness, and hope for the future.
 
-The organization has a bustling multi-level building with rooms that house Chappell Informal School; rooms for dealing with health care issues; rooms for workshops and meetings; rooms for our women’s group to do their sewing and craft activities; and rooms to give our people the room to showcase and sell the products they make and an ICT center for youth." img={sustainability}/>
+      The organization has a bustling multi-level building with rooms that house Chappell Informal School; rooms for dealing with health care issues; rooms for workshops and meetings; rooms for our women’s group to do their sewing and craft activities; and rooms to give our people the room to showcase and sell the products they make and an ICT center for youth." img={sustainability}/>
 
       <Displayseven title='Target Group' desc="The organization primarily works with orphan and vulnerable children from the slum who are in need of school fees, youth, and women from the slum who are empowered with ICT, business, and entrepreneurial skills" link="https://womenforwomeninafrica.org.au/community-centre/" img={target}/>
     </div>

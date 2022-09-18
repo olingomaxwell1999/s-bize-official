@@ -8,12 +8,12 @@
     padding: 1.5rem 0 1.5rem 0;
 
     @media screen and (max-width: 960px){
-        min-height: 100vh !important;
+        min-height: 80vh !important;
         width: 100vw !important;
         grid-template-columns: 1fr;
         margin-top: 0 !important;
         padding-top: 0;
-        margin-bottom: 3rem !important;
+        margin-bottom: 0rem !important;
         padding: 10px 30px;
     }
 
@@ -22,6 +22,7 @@
         width: 100%;
         display: flex;
         align-items: center;
+        // margin-top: 30px;
         justify-content: center;
 
         img{
