@@ -1,5 +1,5 @@
 import React from 'react'
-import photo from '../../assets/banner1.JPG'
+import photo from '../../assets/testimony.png'
 import './testimonial.scss'
 
 function Testimonials() {
