@@ -1,22 +1,33 @@
 .video-responsive {
-overflow: hidden;
+    overflow: hidden;
     position: relative;
-    height: 60vh;
     width: 100%;
+    height: 100%;
+    margin-bottom: 20px !important;
 
     iframe {
         left: 0;
-        top: 0;
+        top: 50px;
         height: 100%;
         width: 100%;
         position: absolute;
-        border-radius: var(--border-radius);
+        border-radius: var(--border-radius) !important;
         box-shadow: var(--box-shadow);
         object-fit: contain;
+        height: 340px !important;
+        width: 670px;
+        // height: 400px !important;
+
+        @media screen and (min-width: 1500px){
+            top: 100px !important;
+        }
+
+        
 
         @media screen and (max-width:960px) {
             width: 100%;
-            height: 50vh !important;
+            position: relative;
+            height: 300px !important;
             margin: auto;
             object-fit: contain !important;
         }

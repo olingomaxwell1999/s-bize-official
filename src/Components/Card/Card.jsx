@@ -12,7 +12,7 @@ function Card(props) {
           <p>{props.desc}</p>
 
           <button className="btn">
-            <Link to={props.link}>Read More</Link>
+            <Link style={{color: 'white'}} to={props.link}>Read More</Link>
           </button>
         </div>
     </div>

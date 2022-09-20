@@ -1,10 +1,11 @@
 import React from 'react'
 import './banner.scss'
 import {Link} from 'react-router-dom'
+import {motion} from 'framer-motion'
 
 function Banner() {
   return (
-    <div className='section bannerone' id='banner'>
+    <motion.div initial={{x:-500, opacity:0, scale:0.5}} animate={{x:0, opacity:1, scale:1}} transition={{duration:.5}}  className='section bannerone' id='banner'>
       <div className="overlay is-overlay"></div>
       <div className="container">
         
@@ -18,7 +19,7 @@ function Banner() {
           </button>
         </div>
       </div> 
-    </div>
+    </motion.div>
   )
 }
 

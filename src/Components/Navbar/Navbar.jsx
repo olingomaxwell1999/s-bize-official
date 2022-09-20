@@ -3,7 +3,7 @@ import logo from '../../assets/logo-sbize.png'
 import {Link} from 'react-router-dom'
 import './navbar.css'
 import Dropdown from './Dropdown'
-import Button from './Button'
+// import Button from './Button'
 // import Button from './Button'
 
 function Navbar() {
@@ -79,7 +79,9 @@ function Navbar() {
         </ul>
         {/* <Button className='nav-btn' /> */}
 
-        <Button/>
+        {/* <Button title='NAIROBITS' /> */}
+
+        {/* <Button title='Apply now' /> */}
       </nav>
     </>
   )

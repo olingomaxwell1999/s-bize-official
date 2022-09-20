@@ -4,7 +4,7 @@ import Video from '../Video/Video'
 
 import './info.scss'
 
-function Infovideo() {
+function Infovideo(props) {
   return (
     <div className="info">
       <div className="text">
@@ -17,7 +17,7 @@ function Infovideo() {
         </p>
 
         <button className="btn">
-          <Link style={{color: '#0F4E7D'}} target='_blank ' to='https://mailchi.mp/nairobits/the-nairobits-way-still-rising?e=[UNIQID]'>get notified</Link>
+          <Link style={{color: '#fff'}} target='_blank ' to='https://mailchi.mp/nairobits/the-nairobits-way-still-rising?e=[UNIQID]'>get notified</Link>
         </button>
       </div>
       <div className="video">

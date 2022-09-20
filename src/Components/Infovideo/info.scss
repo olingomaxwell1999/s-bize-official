@@ -1,16 +1,25 @@
 .info{
-    // padding: var(--padding);
-    width: 1000px !important;
+    padding: var(--padding);
+    width: 100% !important;
     margin: auto;
-    height: 60vh !important;
+    height: 80vh !important;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+
     gap: 2rem;
     width: 100%;
+    background-color: #808080;
     // margin-bottom: 2rem !important;
 
+    @media screen and (min-width: 1500px) {
+        height: 60vh !important;
+        width: 100% !important;
+        // margin: auto;
+        padding: var(--padding-large);
+    }
+
     @media screen and (max-width: 900px) {
-        min-height: 80vh !important;
+        min-height: 90vh !important;
         width: 100vw !important;
         grid-template-columns: 1fr;
         margin-top: 0 !important;
@@ -53,6 +62,7 @@
         p{
             font-weight: 500;
             margin-bottom: 1.5rem;
+            color: white;
         }
 
         button{
@@ -63,10 +73,8 @@
     
     .video{
         display: flex;
-        justify-content: center;
-        align-items: center;
         margin-bottom: 30px;
-        margin-top: 3.5rem;
+        margin-top: 0;
 
         @media screen and (max-width: 900px){
             margin-top: 1rem;

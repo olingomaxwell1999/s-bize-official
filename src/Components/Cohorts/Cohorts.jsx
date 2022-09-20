@@ -11,7 +11,6 @@ function Cohorts() {
     <div className='main-wrapper'>
       <div className="text">
         <h1>Explore the centers</h1>
-        <p>Get to meet all the centers for the 2020 Cohort</p>
       </div>
 
       <div className="cohort">

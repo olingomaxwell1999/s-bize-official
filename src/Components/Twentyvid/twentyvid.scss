@@ -1,16 +1,15 @@
-.twentyvid{
-    min-height: 80vh;
-    width: 1000px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+.twentyvideo{
+    width: 100% !important;
+    padding: var(--padding);
 
     @media screen and (max-width: 900px){
-        width: 80vw;
-        margin: auto;
+        width: 100%;
+        padding: 10px 30px;
+    }
+
+    @media screen and (min-width: 1500px){
+        width: 100%;
+        padding: var(--padding-large);
     }
 
     .title{
@@ -50,12 +49,21 @@
 
     .main{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        height: 90vh;
+        grid-template-columns: 2fr 1fr;
         grid-template-rows: auto auto;
-        gap: 2rem;
+        // background-color: #808080;
+        gap: 1rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
 
         @media screen and (max-width: 900px) {
             grid-template-columns: 1fr;
+            // width: 100%;
+        }
+
+        @media screen and (min-width: 1500px){
+            height: 80vh;
         }
 
         .video{

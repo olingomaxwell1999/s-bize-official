@@ -1,23 +1,24 @@
-.displayone{
-    height: 80vh;
-    width: 1000px;
+.displaytext{
+    height: 50vh;
+    width: 100%;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding);
 
-    @media screen and (max-width:960px) {
-        min-height: 110vh !important;
-        width: 80vw;
-        grid-template-columns: 1fr;
-        margin: auto;
+    @media screen and (min-width:1500px){
+        width: 100%;
+        padding: var(--padding-large);
+        height: 40vh;
     }
 
-    .video{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    @media screen and (max-width:960px) {
+        margin-top: 40px;
+        height: 60vh !important;
+        width: 100%;
+        padding: 20px 30px;
+        margin-bottom: 0;
     }
 
     .text{
@@ -38,7 +39,7 @@
                 content: '';
                 left: 0;
                 bottom: -8px;
-                width: 40%;
+                width: 150px;
                 height: 5px;
                 border-radius: 10px;
                 background-color: var(--main-orange);

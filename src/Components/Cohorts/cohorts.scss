@@ -1,50 +1,47 @@
 .main-wrapper{
-    min-height: 70vh;
     width: 100%;
-    margin: auto;
     padding: var(--padding);
+    min-height: 100vh;
+
+    @media screen and (max-width: 960px){
+        min-height: 100vh !important;
+        width: 100% !important;
+        grid-template-columns: 1fr;
+        margin-top: 1rem !important;
+        margin-bottom: 0 !important;
+        padding: 10px 30px;
+    }
+
+    @media screen and (min-width: 1500px){
+        height: 50vh !important;
+        // margin: auto;
+        padding: var(--padding-large);
+        margin: 0 !important;
+    }
 
     .text{
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        h1{
-            position: relative;
-            font-size: 40px !important;
-            color: var(--main-blue);
-            margin-bottom: 30px !important;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            &::after{
-                content: '';
-                position: absolute;
-                left: 50%;
-                /* bring your own prefixes */
-                transform: translate(-50%, -50%);
-                bottom: -8px;
-                height: 5px;
-                width: 20%;
-                border-radius: var(--border-radius);
-                background-color: var(--main-orange);
-            }
-        }
-
-        p{
-            font-size: 1.1rem;
-            margin-bottom: 40px;
+        @media screen and (max-width: 400px){
+            margin-top: 50px;
+            padding-top: 20px;
         }
     }
 
     .cohort{
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        gap: 1.5rem;  
+        grid-template-rows: auto;
+        gap: 1rem;
+        
+        @media screen and (mAX-width: 960px){
+            grid-template-columns: repeat(2,1fr);
+        }
 
-        @media screen and (max-width: 900px) {
+        @media screen and (mAX-width: 500px){
             grid-template-columns: 1fr;
-            margin: auto !important;
-            // padding: 10px 30px;
         }
     }
 }

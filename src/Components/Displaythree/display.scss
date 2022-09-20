@@ -1,17 +1,25 @@
-.displayone{
+.displayon{
     height: 75vh;
-    width: 1000px;
+    width: 100%;
     margin: auto;
+    padding: var(--padding);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 2rem;
     padding-top: 3rem;
+    background-color: var(--accent-aqua);
 
     @media screen and (max-width:960px) {
         min-height: 110vh !important;
-        width: 80vw;
+        width:  100%;
+        padding: 20px 30px;
         grid-template-columns: 1fr;
         margin: auto;
+    }
+
+    @media screen and (min-width:1500px) {
+        padding: var(--padding-large);
+        height: 60vh !important;
     }
 
     .video{
@@ -47,6 +55,7 @@
 
         p{
             margin-bottom: 30px;
+            color: #fff;
         }
 
         button{

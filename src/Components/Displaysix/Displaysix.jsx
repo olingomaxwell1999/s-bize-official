@@ -3,15 +3,15 @@ import './displaytwo.scss'
 
 function Displaysix(props) {
   return (
-    <div className='displayone'>
-      <div className="text">
-        <h2>{props.title}</h2>
-
-        <p>{props.desc}</p>
-      </div>
+    <div className='displaysix'>
 
       <div className="video">
-        <img src={props.img} alt="" />
+        <iframe
+        src={`https://www.youtube.com/embed/${props.id}`}
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+         title="Embedded youtube"
+        />
       </div>
     </div>
   )

@@ -17,9 +17,9 @@
 }
   
 .cta-btn:hover {
-  padding: 6px 18px;
+  /* padding: 6px 18px; */
   background-color: transparent;
   color: var(--main-blue);
   border-radius: var(--border-radius);
-  border: 2px solid var(--main-orange);
+  border: solid var(--main-orange);
 }

@@ -4,7 +4,7 @@ import Video from '../Video/Video'
 
 function Twentyvid(props) {
   return (
-    <div className='twentyvid'>
+    <div className='twentyvideo'>
         <div className="title">
           <h1>{props.title}</h1>
         </div>

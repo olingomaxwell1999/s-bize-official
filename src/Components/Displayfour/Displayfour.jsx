@@ -4,10 +4,7 @@ import './display.scss'
 
 function Displayfour(props) {
   return (
-    <div className='displayone'>
-      <div className="video">
-        <Video embedId='F8Z9-6VL7k4'/>
-      </div>
+    <div className='display'>
       <div className="text">
         <h2>{props.title}</h2>
 
@@ -16,6 +13,10 @@ function Displayfour(props) {
         <button className="btn">
           <a href={props.link} target='_blank' rel='noreferrer'>Explore More</a>
         </button>
+      </div>
+
+      <div className="video">
+        <Video embedId='F8Z9-6VL7k4'/>
       </div>
     </div>
   )

@@ -12,7 +12,7 @@ function Testimonials() {
         <div className="text">
             <h1 className="title">Testimonials</h1>
 
-            <p>Wanawake kwa Wanawake works with children, youth, and women from the Kibera community. We worked with the MBA students from LSE in one of our empowerment projects and they were a great help in shaping uts business model through participatory actions. Thank you NairoBits.</p>
+            <p>Wanawake kwa Wanawake works with children, youth, and women from the Kibera community. We worked with the MBA students from LSE in one of our empowerment projects and they were a great help in shaping its business model through participatory actions.<br/> Thank you NairoBits.</p>
 
             <button className='btn'>Wanawake Kwa Wanawake</button>
         </div>

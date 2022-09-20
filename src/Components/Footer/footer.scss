@@ -12,8 +12,11 @@
         padding: 20px 30px;
         margin: auto;
     }
-
     
+    @media screen and (min-width: 1500px){
+        margin: auto;
+        padding: var(--padding-large);
+    }
 
     .up{
         font-size: 1.5rem;
@@ -33,10 +36,6 @@
         a{
             margin-right: 20px;
             color: white;
-
-            .icon{
-                
-            }
         }
     }
 
@@ -52,7 +51,7 @@
             grid-template-columns: repeat(2,1fr);
         }
 
-        @media screen and (min-width:300px) and (max-width: 600px) {
+        @media screen and (max-width:320px) and (max-width: 600px) {
             grid-template-columns:1fr;
         }
 

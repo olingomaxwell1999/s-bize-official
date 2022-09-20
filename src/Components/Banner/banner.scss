@@ -44,6 +44,12 @@
             margin: 0;
         }
 
+        @media screen and (min-width: 1500px) {
+            width: 1280px !important;
+            padding: 0 30px;
+            margin: auto;
+        }
+
         h1{
             font-size: 80px !important;
             color: #fff;

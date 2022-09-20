@@ -1,11 +1,11 @@
 .testimony{
     height: 60vh;
-    width: 1000px;
+    width: 100%;
     margin: 0 auto 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    padding: 1.5rem 0 1.5rem 0;
+    padding: var(--padding);
 
     @media screen and (max-width: 960px){
         min-height: 80vh !important;
@@ -17,6 +17,11 @@
         padding: 10px 30px;
     }
 
+    @media screen and (min-width: 1500px){
+        height: 60vh !important;
+        padding: var(--padding-large) !important;
+    }
+
     .img{
         height: 100%;
         width: 100%;
@@ -26,11 +31,19 @@
         justify-content: center;
 
         img{
-            height: 80%;
+            height: 300px;
             width: 80%;
             object-fit: cover;
             border-radius: var(--border-radius);
             box-shadow: var(--box-shadow);
+
+            @media screen and (max-width: 500px){
+                height: 200px !important;
+            }
+
+            @media screen and (min-width: 1500px){
+                height: 100% !important;
+            }
         }
     }
 

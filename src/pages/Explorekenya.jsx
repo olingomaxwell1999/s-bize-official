@@ -1,5 +1,4 @@
 import React from 'react'
-import Gallery from '../Components/Gallery/Gallery'
 import back4 from '../assets/explore.jpeg'
 import kenya from '../assets/kenya.gif'
 import food from '../assets/food.jpg'
@@ -24,8 +23,6 @@ function Explorekenya() {
       <Displaytwo title='Food' desc="When you think of Kenya, you probably imagine herds of elephants and prides of lions, burning sunsets, stunning golden beaches, or their talented Olympic runners… But what about the food in Kenya? This East African cuisine is made with delicious ingredients and plenty of love, and takes you on a mouthwatering journey deep into the country’s soul." link="https://www.willflyforfood.net/food-in-kenya/" img={food}/>
 
       <Displayfour title="Music" desc="Kenyan music is already killing it with musicians organizing more live concerts, promoting their music online, selling cool merchandise, and releasing quality albums on their own without record labels. It’s basically a DIY movement. " link="https://www.afrocharts.com/country?id=ken"/>
-
-      <Gallery/>
     </div>
   )
 }
