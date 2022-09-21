@@ -7,7 +7,7 @@
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
     padding-top: 5rem;
-    background-color: #808080;
+    background-color: #ececec;
 
     @media screen and (max-width:960px) {
         min-height: 110vh !important;
@@ -62,7 +62,7 @@
 
         p{
             margin-bottom: 30px;
-            color: #fff;
+            // color: #fff;
         }
 
         button{

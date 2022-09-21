@@ -1,5 +1,7 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './footer.scss'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 // import logo from '../../assets/logo-sbize.png'
 import { FaFacebookF } from "react-icons/fa";
@@ -9,14 +11,17 @@ import {AiFillYoutube} from 'react-icons/ai'
 import {Link} from 'react-router-dom'
 
 function Footer() {
+  useEffect(() => {
+    AOS.init({duration:2000})
+  })
   return (
     <div className='footer'>
-      <a href="#banner">
+      <a href="#banner" data-aos='fade-up'>
         <BsFillArrowUpCircleFill className='up'/>
       </a>
       
 
-      <div className="cols">
+      <div className="cols" data-aos='fade-up'>
         
         <div className="col">
           <h3>quick links</h3>

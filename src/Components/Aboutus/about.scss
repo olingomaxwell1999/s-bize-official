@@ -8,12 +8,12 @@
     padding: var(--padding);
 
     @media screen and (max-width: 960px){
-        height: 65vh !important;
+        min-height: 65vh !important;
         width: 100vw !important;
         grid-template-columns: 1fr;
         margin-top: 1rem !important;
         margin-bottom: 0 !important;
-        padding: 10px 30px;
+        padding: 20px 30px;
     }
 
     @media screen and (min-width: 1500px){
@@ -22,6 +22,10 @@
         margin: auto;
         padding: var(--padding-large);
         overflow: hidden;
+    }
+
+    @media screen and (min-width: 2300px){
+        height: 80vh !important;
     }
 
     .img{
@@ -37,7 +41,7 @@
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
             height: 80%;
             width: 400px;
-            background-color: var(--accent-aqua);
+            background-color: #ececec;
             border-radius: var(--border-radius);
             position: absolute;
             opacity: .5;
@@ -69,9 +73,36 @@
             left: -50px;
             top: 150px !important;
             // right: 100px;
+            background-image: url(../../assets/nobg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation: bg 10s infinite;
 
             border-radius: 50%;
             overflow: hidden;
+
+            @keyframes bg {
+                0%{
+                    background-image: url(../../assets/nobg.png);
+                }
+
+                25%{
+                    background-image: url(../../assets/testimony2.JPG);
+                }
+
+                50%{
+                    background-image: url(../../assets/testimony3.JPG);
+                }
+
+                75%{
+                    background-image: url(../../assets/testimony4.JPG);
+                }
+
+                100%{
+                    background-image: url(../../assets/testimony1.JPG);
+                }
+            }
 
             @media screen and (max-width: 900px) {
                 height: 35vh;

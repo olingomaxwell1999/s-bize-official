@@ -22,6 +22,10 @@
         padding: var(--padding-large) !important;
     }
 
+    @media screen and (min-width: 2300px) {
+        height: 80vh !important;
+    }
+
     .img{
         height: 100%;
         width: 100%;
@@ -50,6 +54,10 @@
     .text{
         height: 100%;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        // align-items: center;
 
         h1{
             text-transform: capitalize;

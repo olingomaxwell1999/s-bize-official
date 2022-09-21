@@ -8,7 +8,7 @@
 
     gap: 2rem;
     width: 100%;
-    background-color: #808080;
+    background-color: #ececec;
     // margin-bottom: 2rem !important;
 
     @media screen and (min-width: 1500px) {
@@ -18,8 +18,12 @@
         padding: var(--padding-large);
     }
 
+    @media screen and (min-width: 2300px){
+        height: 80vh !important;
+    }
+
     @media screen and (max-width: 900px) {
-        min-height: 90vh !important;
+        min-height: 100vh !important;
         width: 100vw !important;
         grid-template-columns: 1fr;
         margin-top: 0 !important;
@@ -62,7 +66,7 @@
         p{
             font-weight: 500;
             margin-bottom: 1.5rem;
-            color: white;
+            // color: white;
         }
 
         button{

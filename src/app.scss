@@ -56,7 +56,7 @@ h1{
 
 p{
     margin-top: 0;
-    font-size: 1.1rem;
+    font-size: 1.1rem !important;
 
     @media screen and (max-width: 900px) {
         font-size: 0.8rem !important;
@@ -86,12 +86,6 @@ p{
     Link{
         color: white !important;
     }
-
-    &:hover{
-        background-color: transparent !important;
-        border: 1.5px solid var(--main-orange) !important;
-        color: var(--main-orange) !important;
-    }
 }
 
 .btn-green{
@@ -115,11 +109,6 @@ p{
         font-size: .8rem !important;
         width: 100px;
     }
-
-    &:hover{
-        background-color: transparent !important;
-        border: 1.5px solid var(--secondary-green) !important;
-    }
 }
 
 .btn-transparent{
@@ -142,12 +131,6 @@ p{
         padding: 8px;
         font-size: .8rem !important;
         width: 100px;
-    }
-
-    &:hover{
-        background-color: var(--main-orange) !important;
-        border: none;
-        color: var(--secondary-green);
     }
 }
 
@@ -237,9 +220,9 @@ li{
             &::after{
                 position: absolute;
                 content: '';
-                left: 30%;
+                left: 40%;
                 bottom: -8px;
-                width: 40%;
+                width: 200px;
                 height: 5px;
                 border-radius: 10px;
                 background-color: var(--main-orange);

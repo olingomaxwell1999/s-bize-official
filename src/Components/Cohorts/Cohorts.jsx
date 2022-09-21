@@ -1,19 +1,24 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './cohorts.scss'
 import Card from '../Card/Card'
 import nairobits from '../../assets/nairobits.png'
 import relinked from '../../assets/relinked.jpg'
 import ruben from '../../assets/ruben.jpg'
 import wanawake from '../../assets/w4w.jpg'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Cohorts() {
+  useEffect(() => {
+    AOS.init({duration:2000})
+  })
   return (
     <div className='main-wrapper'>
-      <div className="text">
+      <div className="text" data-aos='fade-up'>
         <h1>Explore the centers</h1>
       </div>
 
-      <div className="cohort">
+      <div className="cohort" data-aos='fade-up'>
         <Card img={nairobits} title="Nairobits Trust" desc="NairoBits was created to empower youth from under-served backgrounds, using Information Communication Technology (ICT). The primary target group is disadvantaged youth from the informal urban settlements of Nairobi...." link="/nairobits"  />
 
         <Card img={relinked} title="Relinked Group" desc="Relinked Group is a growing network of young people who are using their gifts, skills, and expertise to create compelling opportunities that contribute to sustainable development. They currently work with young people East-lands of Nairobi....." link="/relinkedgroup"  />

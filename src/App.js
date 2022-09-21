@@ -15,6 +15,13 @@ import Wanawake from './pages/Wanawake'
 import Twenty from './pages/Twenty'
 import Twentyone from './pages/Twentyone'
 import Twentytwo from './pages/Twentytwo'
+import Green from './pages/Green';
+import Sunflower from './pages/Sunflower';
+import Mpi from './pages/Mpi'
+import Sautiafrica from './pages/Sautiafrica'
+import Africa from './pages/Africa'
+import Utena from './pages/Utena'
+import Codewithkids from './pages/Codewithkids'
 
 function App() {
   return (
@@ -28,6 +35,13 @@ function App() {
         <Route path='/nairobits' element={<Nairobits/>}/>
         <Route path='/rubencenter' element={<Rubencenter/>}/>
         <Route path='/relinkedgroup' element={<Relinkedgroup/>}/>
+        <Route path='/greenkenya' element={<Green/>}/>
+        <Route path='/sunflowerfoundation' element={<Sunflower />}/>
+        <Route path='/mpi' element={<Mpi />}/>
+        <Route path='/sautiafrica' element={<Sautiafrica />}/>
+        <Route path='/africayouthtrust' element={<Africa/>}/>
+        <Route path='/utenayouthorganisation' element={<Utena/>}/>
+        <Route path='/codewithkids' element={<Codewithkids/>}/>
         <Route path='/wanawake' element={<Wanawake/>}/>
         <Route path='/twenty' element={<Twenty/>}/>
         <Route path='/twentyone' element={<Twentyone/>}/>

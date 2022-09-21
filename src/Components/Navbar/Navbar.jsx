@@ -3,7 +3,7 @@ import logo from '../../assets/logo-sbize.png'
 import {Link} from 'react-router-dom'
 import './navbar.css'
 import Dropdown from './Dropdown'
-// import Button from './Button'
+import Button from './Button'
 // import Button from './Button'
 
 function Navbar() {
@@ -69,19 +69,28 @@ function Navbar() {
           </li> 
           <li>
             <Link
-              to='/sign-up'
+              to='https://www.nairobits.com'
               className='nav-links-mobile btn'
               onClick={closeMobileMenu}
             >
-              Apply Today
+              Nairobits Trust
+            </Link>
+          </li>
+          <li>
+            <Link
+              to='https://www.nairobits.com/apply'
+              className='nav-links-mobile btn'
+              onClick={closeMobileMenu}
+            >
+              Apply Now
             </Link>
           </li>
         </ul>
         {/* <Button className='nav-btn' /> */}
 
-        {/* <Button title='NAIROBITS' /> */}
+        <Button title='NAIROBITS TRUST' />
 
-        {/* <Button title='Apply now' /> */}
+        <Button title='APPLY NOW' />
       </nav>
     </>
   )
