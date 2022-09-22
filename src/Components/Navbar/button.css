@@ -11,6 +11,7 @@
   background-color: var(--main-orange);
   transition: var(--transition);
   margin-right: 20px;
+  font-family: var(--main-font) !important;
 }
 
 @media screen and (max-width: 960px) {
