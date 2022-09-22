@@ -88,7 +88,7 @@ function Navbar() {
         </ul>
         {/* <Button className='nav-btn' /> */}
 
-        <Button title='NAIROBITS TRUST' link='https://www.nairobits.com' />
+        <Button title='NAIROBITS' link='https://www.nairobits.com' />
 
         <Button title='APPLY NOW' link='https://www.nairobits.com/apply' />
       </nav>

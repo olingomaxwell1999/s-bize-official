@@ -17,16 +17,16 @@
     }
 
     @media screen and (min-width: 1500px){
-        height: 60vh !important;
+        min-height: 20vh !important;
         width: 100% !important;
         margin: auto;
         padding: var(--padding-large);
         overflow: hidden;
     }
 
-    @media screen and (min-width: 2300px){
-        min-height: 80vh !important;
-    }
+    // @media screen and (min-width: 2300px){
+    //     min-height: 100vh !important;
+    // }
 
     .img{
         height: 100%;
@@ -39,7 +39,7 @@
 
         .rhombus{
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-            height: 80%;
+            height: 600px;
             width: 400px;
             background-color: #dafffa;
             border-radius: var(--border-radius);
