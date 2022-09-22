@@ -17,7 +17,12 @@
 
         a{
             color: var(--main-orange);
+            font-size: 1.1rem !important;
+        }
+
+        .max{
             font-size: .8rem !important;
+            margin-left: 20px;
         }
     }
 }
