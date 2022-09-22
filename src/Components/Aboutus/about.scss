@@ -1,5 +1,5 @@
 .about{
-    height: 100vh !important;
+    height: 110vh !important;
     width: 100%;
     margin: 0 auto 0 auto;
     display: grid;
@@ -41,7 +41,7 @@
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
             height: 80%;
             width: 400px;
-            background-color: #ececec;
+            background-color: #dafffa;
             border-radius: var(--border-radius);
             position: absolute;
             opacity: .5;
@@ -73,18 +73,18 @@
             left: -50px;
             top: 150px !important;
             // right: 100px;
-            background-image: url(../../assets/nobg.png);
+            background-image: url(../../assets/banner1.JPG);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            animation: bg 10s infinite;
+            animation: bg 10s linear infinite;
 
             border-radius: 50%;
             overflow: hidden;
 
             @keyframes bg {
                 0%{
-                    background-image: url(../../assets/nobg.png);
+                    background-image: url(../../assets/testimony.png);
                 }
 
                 25%{
@@ -167,7 +167,7 @@
                 content: '';
                 left: 0;
                 bottom: -8px;
-                width: 40%;
+                width: 200px;
                 height: 5px;
                 border-radius: 10px;
                 background-color: var(--main-orange);

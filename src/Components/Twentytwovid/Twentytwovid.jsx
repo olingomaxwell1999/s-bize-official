@@ -13,7 +13,7 @@ function Twentytwovid(props) {
         <div className="main">
 
           <div className="video" data-aos='fade-up'>
-            <Video embedId='q3wX4e1hnTc' />
+            <Video embedId='NnpQaEcwA6o' />
           </div>
 
           <div className="text" data-aos='fade-up'>

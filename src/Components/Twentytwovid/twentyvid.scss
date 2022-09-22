@@ -49,13 +49,12 @@
 
     .main{
         display: grid;
-        height: 90vh;
+        height: 100vh !important;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto auto;
         // background-color: #808080;
-        gap: 1rem;
-        margin-bottom: 0;
-        padding-bottom: 0;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
 
         @media screen and (max-width: 900px) {
             grid-template-columns: 1fr;

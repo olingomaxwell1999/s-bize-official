@@ -80,6 +80,9 @@ function Footer() {
           <h3>newsletter</h3>
           <p>Subscribe to our newsletter & stay updated</p>
           <input className='input' type="text" placeholder='Email Address' />
+          <button className='btn'>
+            <a href="https://mailchi.mp/nairobits/the-nairobits-way-still-rising?e=[UNIQID]" target="_blank" rel="noreferrer">Subscribe</a>
+          </button>
         </div>
       </div>
     </div>
