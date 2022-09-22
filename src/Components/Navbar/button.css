@@ -5,13 +5,14 @@
   border: none;
   width: 160px;
   font-size: 1.1rem;
-  color: #fff;
+  color: #fff !important;
   text-transform: uppercase;
   cursor: pointer;
   background-color: var(--main-orange);
   transition: var(--transition);
   margin-right: 20px;
   font-family: var(--main-font) !important;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 960px) {

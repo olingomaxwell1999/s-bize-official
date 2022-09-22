@@ -5,7 +5,7 @@ import './button.css'
 function Button(props) {
   return (
       <button className='cta-btn'>
-        <a href={props.title} target="_blank" rel="noreferrer">
+        <a style={{color: 'white'}} href={props.title} target="_blank" rel="noreferrer">
           {props.title}
         </a>
       </button>
