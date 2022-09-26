@@ -76,44 +76,63 @@ p{
 }
 
 .btn{
-    padding: 10px 20px;
+    padding: 7px 20px 10px;
     font-size: 1.1rem;
-    color: #fff !important;
-    background-color: var(--main-orange) !important;
-    border: none;
+    color: #fff;
+    background-color: var(--main-orange);
+    border: 1px solid var(--main-orange);
     outline: none;
     transition: var(--transition);
     border-radius: var(--border-radius);
     text-transform: capitalize;
-    width: 200px;
+    width: 50%;
     cursor: pointer;
     font-weight: 400 !important;
+    transition: var(--transition);
 
     @media screen and (max-width:960px) {
         padding: 2px;
         font-size: .6rem !important;
-        width: 150px;
+    }
+
+    &:hover{
+        background-color: transparent;
     }
 
     Link{
         color: white !important;
     }
+
+        &:hover > a{
+            color: var(--main-orange) !important;
+        }
+}
+
+.special-btn{
+    width: 50%;
 }
 
 .btn-green{
-    padding: 10px 20px;
+    padding: 7px 20px 10px;
     font-size: 1.1rem;
     color: #fff !important;
-    background-color: var(--secondary-green) !important;
-    border: none;
+    background-color: var(--secondary-green);
+    border: 1px solid var(--secondary-green);
     outline: none;
     transition: var(--transition);
     border-radius: var(--border-radius);
-    text-transform: capitalize;
-    width: 200px;
+    width: 50%;
 
     Link{
         color: white !important;
+    }
+
+    &:hover{
+        background-color: transparent;
+    }
+
+    &:hover > a{
+        color: var(--secondary-green) !important;
     }
 
     @media screen and (max-width:960px) {
@@ -124,20 +143,28 @@ p{
 }
 
 .btn-transparent{
-    padding: 10px 20px;
+    padding: 7px 20px 10px;
     font-size: 1.1rem;
-    color: #fff !important;
+    color: #fff;
     background-color: transparent;
     border: 1px solid var(--main-orange);
     outline: none;
     transition: var(--transition);
     border-radius: var(--border-radius);
     text-transform: capitalize;
-    width: 200px;
+    width: 50%;
 
     Link{
         color: white !important;
     }
+
+    &:hover{
+        background-color: var(--main-orange);
+    }
+
+    // &:hover > a{
+    //     color: #fff;
+    // }
 
     @media screen and (max-width:960px) {
         padding: 8px;

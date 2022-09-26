@@ -66,9 +66,9 @@ function Footer() {
         
         <div className="col bs">
           <button className="btn-green">
-            <a href="https://www.iaccess.co.ke/" target="_blank" rel="noreferrer">iaccess</a>
+            <a href="https://www.iaccess.co.ke/" target="_blank" rel="noreferrer">iAccess</a>
           </button>
-          <button className="btn">
+          <button className="btn special-btn">
             <a href="https://www.nairobits.com/donate" target="_blank" rel="noreferrer">donate</a>
           </button>
           <button className="btn-transparent">
