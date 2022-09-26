@@ -30,8 +30,8 @@ p{
         font-weight: 400 !important;
     }
 
-    @media screen and (min-width:2300px) {
-        
+    @media screen and (min-width:1500px) {
+        font-size: 2rem !important;
     }
 }
 
@@ -40,6 +40,10 @@ h3{
 
     @media screen and (max-width:960px) {
         font-size: 1.5rem !important;
+    }
+
+    @media screen and (min-width:1500px) {
+        font-size: 3rem !important;
     }
 }
 
@@ -55,6 +59,10 @@ h1{
 
     @media screen and (max-width: 600px) {
         font-size: 2.5rem !important;
+    }
+
+    @media screen and (min-width:1500px) {
+        font-size: 4rem !important;
     }
 }
 

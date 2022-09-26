@@ -3,8 +3,8 @@ import logo from '../../assets/logo-sbize.png'
 import {Link} from 'react-router-dom'
 import './navbar.css'
 import Dropdown from './Dropdown'
+import Buttonapply from './Buttonapply'
 import Button from './Button'
-// import Button from './Button'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -68,32 +68,23 @@ function Navbar() {
             </Link>
           </li> 
           <li>
-            <Link
-              to='https://www.nairobits.com'
-              className='nav-links-mobile btn'
-              onClick={closeMobileMenu}
-            >
-              Nairobits Trust
-            </Link>
+            <a href="https://www.nairobits.com" onClick={closeMobileMenu} className='nav-links-mobile btn' target='_blank' rel='noreferrer'>
+              Nairobits
+            </a>
           </li>
           <li>
-            <Link
-              to='https://www.nairobits.com/apply'
-              className='nav-links-mobile btn'
-              onClick={closeMobileMenu}
-            >
-              Apply Now
-            </Link>
+            <a href="https://www.nairobits.com/apply" target='_blank' className='nav-links-mobile btn'
+              onClick={closeMobileMenu} rel='noreferrer'>Apply</a>
           </li>
         </ul>
-        {/* <Button className='nav-btn' /> */}
 
-        <Button title='NAIROBITS' link='https://www.nairobits.com' />
+        <Button/>
 
-        <Button title='APPLY NOW' link='https://www.nairobits.com/apply' />
+        <Buttonapply/>
+        
       </nav>
     </>
   )
 }
 
-export default Navbar
+export default Navbar;

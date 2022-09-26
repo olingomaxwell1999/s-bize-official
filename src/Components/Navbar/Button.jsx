@@ -1,15 +1,11 @@
-import React from 'react'
-// import { Link } from 'react-router-dom'
-import './button.css'
+import React from 'react';
+import './button.css';
+// import { Link } from 'react-router-dom';
 
-function Button(props) {
+export default function Button() {
   return (
-      <button className='cta-btn'>
-        <a style={{color: 'white'}} href={props.title} target="_blank" rel="noreferrer">
-          {props.title}
-        </a>
+      <button className='btn-nairobits'>
+        <a className='nairobits' href="https://nairobits.com" target="_blank" rel="noreferrer">Nairobits</a>
       </button>
-  )
+  );
 }
-
-export default Button

@@ -4,26 +4,22 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
-    padding: 100px 10rem;
+    padding: 100px 6rem;
 
     @media screen and (max-width: 960px){
         width: 100vw !important;
         grid-template-columns: 1fr;
         margin-top: 1rem !important;
         margin-bottom: 0 !important;
-        // padding: 20px 30px;
+        padding: 20px 30px;
     }
 
     @media screen and (min-width: 1500px){
         width: 100% !important;
         margin: auto;
-        // padding: var(--padding-large);
+        padding: 100px 10rem;
         overflow: hidden;
     }
-
-    // @media screen and (min-width: 2300px){
-    //     min-height: 100vh !important;
-    // }
 
     .img{
         height: 100%;
