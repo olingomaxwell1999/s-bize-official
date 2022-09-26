@@ -13,7 +13,7 @@
   color: #fff;
 }
 
-.nairobits:hover{
+.btn-nairobits:hover > a{
   color: var(--main-orange);
 }
 

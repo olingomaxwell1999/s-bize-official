@@ -13,7 +13,7 @@
     color: #fff;
 }
 
-.apply:hover{
+.btn-apply:hover > a{
     color: var(--secondary-green);
 }
   
