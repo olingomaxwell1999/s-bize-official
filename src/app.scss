@@ -86,6 +86,7 @@ p{
     border-radius: var(--border-radius);
     text-transform: capitalize;
     width: 50%;
+    max-width: 200px;
     cursor: pointer;
     font-weight: 400 !important;
     transition: var(--transition);
