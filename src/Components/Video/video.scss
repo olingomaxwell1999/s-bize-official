@@ -8,14 +8,13 @@
     iframe {
         left: 0;
         top: 50px;
-        height: 100%;
-        width: 100%;
         position: absolute;
         border-radius: var(--border-radius) !important;
         box-shadow: var(--box-shadow);
         object-fit: contain;
-        height: 340px;
-        width: 670px;
+        // height: 340px;
+        aspect-ratio: 16/9;
+        width: 100%;
 
         @media screen and (min-width: 1500px){
             width: 100%;
