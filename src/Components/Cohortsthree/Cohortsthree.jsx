@@ -5,6 +5,7 @@ import nairobits from '../../assets/sautiafricalogo.jpeg'
 import relinked from '../../assets/africayouthlogo.png'
 import ruben from '../../assets/utenalogo.png'
 import wanawake from '../../assets/codewithkidslogo.jpg'
+import TAF from '../../assets/TAF-Logo.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -25,7 +26,9 @@ function Cohortsthree() {
 
         <Card img={ruben} title="U-tena youth organization" desc="A Kenyan NGO focused on empowering youth to realize their full potential, promoting healthy living, education, livelihood and social responsibility..." link="/utenayouthorganisation"  />
 
-        <Card img={wanawake} title="code with kids" desc="A STEM maker space that organizes STEM sessions for community members with a focus on addressing real-life problems..." link="/codewithkids"  />
+        <Card img={wanawake} title="code with kids" desc="A STEM maker space that organizes STEM sessions for community members with a focus on addressing real-life problems..." link="/codewithkids" />
+        
+        <Card img={TAF} title="the action foundation" desc="The Action Foundation (TAF) is a Kenyan community-driven organization that works to end exclusion..." link="/actionfoundation"  />
       </div>
     </div>
   )

@@ -1,18 +1,18 @@
-.twentyvideo{
+.twentyvideo {
     width: 100% !important;
     padding: var(--padding);
 
-    @media screen and (max-width: 900px){
+    @media screen and (max-width: 900px) {
         width: 100%;
         padding: 10px 30px;
     }
 
-    @media screen and (min-width: 1500px){
+    @media screen and (min-width: 1500px) {
         width: 100%;
         padding: var(--padding-large);
     }
 
-    .title{
+    .title {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -21,13 +21,13 @@
         color: var(--main-blue);
         // margin-top: 30px;
 
-        h1{
+        h1 {
             font-size: 3.1rem;
             text-transform: capitalize;
             // color: var(--main-color);
             position: relative;
 
-            &::after{
+            &::after {
                 content: '';
                 position: absolute;
                 // top: 50%;
@@ -41,27 +41,28 @@
                 border-radius: var(--border-radius);
             }
 
-            @media screen and (max-width: 900px){
-                    text-align: center;
+            @media screen and (max-width: 900px) {
+                text-align: center;
             }
         }
     }
 
-    .main{
+    .main {
         display: grid;
-        height: 100vh !important;
+        height: 90vh;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto auto;
         // background-color: #808080;
-        margin-bottom: 0 !important;
-        padding-bottom: 0 !important;
+        gap: 1rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
 
         @media screen and (max-width: 900px) {
             grid-template-columns: 1fr;
             // width: 100%;
         }
 
-        @media screen and (min-width: 1500px){
+        @media screen and (min-width: 1500px) {
             height: 80vh !important;
             padding-bottom: 0;
             margin-bottom: 0;
@@ -72,14 +73,14 @@
             grid-template-columns: 4fr 2fr;
         }
 
-        .video{
+        .video {
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .text{
+        .text {
             display: flex;
             justify-content: center;
             align-items: center;

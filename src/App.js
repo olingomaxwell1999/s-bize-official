@@ -22,6 +22,7 @@ import Sautiafrica from './pages/Sautiafrica'
 import Africa from './pages/Africa'
 import Utena from './pages/Utena'
 import Codewithkids from './pages/Codewithkids'
+import ActionFoundation from './pages/ActionFoundation';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path='/greenkenya' element={<Green/>}/>
         <Route path='/sunflowerfoundation' element={<Sunflower />}/>
         <Route path='/mpi' element={<Mpi />}/>
+        <Route path='/actionfoundation' element={<ActionFoundation/> }/>
         <Route path='/sautiafrica' element={<Sautiafrica />}/>
         <Route path='/africayouthtrust' element={<Africa/>}/>
         <Route path='/utenayouthorganisation' element={<Utena/>}/>
